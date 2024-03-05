@@ -18,20 +18,21 @@ function Navbar() {
             <img src={Logo} alt='LOGO' />
             <div className='hiddenLinks'>
                 <Link to='/'>Home</Link>
-                <Link to='/menu'>Menu</Link>
-                <Link to='/about'>About</Link>
-                <Link to='/contact'>Contact</Link>
+                <Link to='/login'>Login</Link>
+                <Link to='/parent'>Parent</Link>
+                <Link to='/patient'>Patient</Link>
             </div>
         </div>
         <div className='rightSide'>
             <Link to='/'>Home</Link>
-            <Link to='/menu'>Menu</Link>
-            <Link to='/about'>About</Link>
-            <Link to='/contact'>Contact</Link>
+            <Link to='/login'>Login</Link>
+            <Link to='/parent'>Parent</Link>
+            <Link to='/patient'>Patient</Link>
             <button onClick={toggleNavbar}>
                 <ReorderIcon />
             </button>
         </div>
+        <footer />
       </div>
     
   )
