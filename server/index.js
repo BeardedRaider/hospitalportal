@@ -24,4 +24,4 @@ mongoose.connection.on('connected', () => {
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
-});/* app.listen() is used to start the server. */
+});/* app.listen() is used to start the server.  */
