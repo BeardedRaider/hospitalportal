@@ -11,6 +11,9 @@ const userSchema = new mongoose.Schema({
     department: String,
     notes: String,
     patient_number: Number,
+    department_id: { type: mongoose.Schema.Types.ObjectId, ref: 'Department' },
+    appointment_date: Date,
+    appointment_notes: String,
 });/* mongoose.Schema() is used to define the structure of the document. */
 
 const User = mongoose.model('User', userSchema);/* mongoose.model() is used to create a model. */
