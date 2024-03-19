@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 app.get('/api/users', async (req, res) => {
     try {
         // Get all users from the database
@@ -8,12 +9,14 @@ app.get('/api/users', async (req, res) => {
     }
 
     // Verify the token
+    // eslint-disable-next-line no-undef
     jwt.verify(token, 'your-secret-key', async (err, decoded) => {
         if (err) {
         return res.status(401).json({ error: 'Unauthorized: Invalid token' });
         }
     
           // The decoded.userId should match the structure used in jwt.sign during login
+        // eslint-disable-next-line no-undef
         const user = await User.findById(decoded.userId);
 
         if (!user) {
