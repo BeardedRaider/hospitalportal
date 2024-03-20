@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 // import axios from "axios";
 // import { useNavigate } from "react-router-dom"
@@ -12,10 +12,47 @@ function Login() {
     // Defin an async function handleLogin to handle the login
   const handleLogin = async () => {
     try {
-      //
+      // POST request for the login with parent No ans pw
+      const response = await axios.post('http://localhost:5000/api/login', {
+        patient_number,
+        password,
+      });
 
+      //if correct login, log a successful message and the token received from the server
+      console.log('Login Successful');
+      console.log('Token:', response.data.token);
+
+      //save token to local storage
+      localStorage.setItem('token', response.data.token);
+      //stave patient num to local storage
+      localStorage.setItem('patientNum', response.data.patient_number);
+      //save parent state to LS
+      if (parent) {
+        localStorage.setItem('parent', 'true');
+      } else {
+        localStorage.removeItem('parent');
+      }
+      //if user is parent redirenct to parent dash
+      if (parent) {
+        navigate('/parentDashboard');
+      } else {
+        navigate('/dashboard');
+      }
+    } catch (error) {
+      //if login fails log the error on server
+      console.error('Login failed:', error.response.data.error);
     }
+  };
+//load parent state from LS on component mount
+useEffect(() => {
+  // Reterieve the parent state from the LS
+  const storedParent = localStorage.getItem('parent');
+  //if state is true set the parent state to true
+  if (storedParent) {
+    setParent(true);
   }
+}, []);
+
 
   return (
     <div>

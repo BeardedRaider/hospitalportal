@@ -1,3 +1,13 @@
+ENV file needs installing on other devices
+.env file form here to my desktop needs transfering
+
+also npm i nvm
+npm i (if not done already)
+npm i axios
+
+all do this on desktop.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
