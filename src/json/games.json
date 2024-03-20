@@ -10,15 +10,15 @@
         "name": "Burger",
         "description": "Burger with cheese and tomato"
     },
-    
+
     {
-        "image": "/images/img1.jpeg",
+        "image": "/images/img3.jpeg",
         "name": "Burger",
         "description": "Burger with cheese and tomato"
     },
     
     {
-        "image": "/images/img2.jpeg",
+        "image": "/images/img4.jpeg",
         "name": "Burger",
         "description": "Burger with cheese and tomato"
     }
