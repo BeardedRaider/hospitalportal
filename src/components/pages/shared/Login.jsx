@@ -1,8 +1,22 @@
 import React from "react";
-import axios from "axios";
-import { useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom";
+// import axios from "axios";
+// import { useNavigate } from "react-router-dom"
 
 function Login() {
+    const [patient_number, setPatientNumber] = useState('');
+    const [password, setPassword] = useState('');
+    const [parent, setParent] = useState(false);//state for the box
+    const navigate = useNavigate();
+
+    // Defin an async function handleLogin to handle the login
+  const handleLogin = async () => {
+    try {
+      //
+
+    }
+  }
+
   return (
     <div>
       <div class="bg-gray-100 flex justify-center items-center h-screen">
