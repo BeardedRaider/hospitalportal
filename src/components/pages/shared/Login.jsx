@@ -99,7 +99,7 @@ useEffect(() => {
                 autocomplete="off"
               />
             </div>
-            {/* <!-- Parent/Guardian Checkbox --> */}
+            {/* <!-------- Parent/Guardian Checkbox --------> */}
             <div class="mb-4 flex items-center">
               <input
                 type="checkbox"
