@@ -1,11 +1,24 @@
 [
     {
-        "image": "/images/1.jpg",
+        "image": "/images/img1.jpeg",
         "name": "Burger",
         "description": "Burger with cheese and tomato"
     },
+    
     {
-        "image": "/images/1.jpg",
+        "image": "/images/img2.jpeg",
+        "name": "Burger",
+        "description": "Burger with cheese and tomato"
+    },
+    
+    {
+        "image": "/images/img1.jpeg",
+        "name": "Burger",
+        "description": "Burger with cheese and tomato"
+    },
+    
+    {
+        "image": "/images/img2.jpeg",
         "name": "Burger",
         "description": "Burger with cheese and tomato"
     }
