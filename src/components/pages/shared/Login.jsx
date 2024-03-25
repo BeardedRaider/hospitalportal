@@ -94,7 +94,7 @@ useEffect(() => {
                 type="password"
                 placeholder="password"
                 value={password}
-                onChange={(e) => setPassword(e.target.value)}
+                onChange={(e) => setPassword(e.target.value)}//set the password state
                 class="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"
                 autocomplete="off"
               />
@@ -103,17 +103,18 @@ useEffect(() => {
             <div class="mb-4 flex items-center">
               <input
                 type="checkbox"
-                id="remember"
-                name="remember"
+                id="checkbox_id"
+                checked={parent}
+                onChange={() => setParent(!parent)}//toggle the parent state
                 class="text-blue-500"
               />
-              <label for="remember" class="text-gray-600 ml-2">
-                Remember Me
+              <label for="checkbox_id" class="text-gray-600 ml-2">
+                Parent/Guardian please select
               </label>
             </div>
             {/* <!-- Forgot Password Link --> */}
             <div class="mb-6 text-blue-500">
-              <button class="hover:underline">Forgot Password?</button>
+              <button class="hover:underline" type="submit" onClick={handleLogin}>Sign in</button>
             </div>
             {/* <!-- Login Button --> */}
             <button
