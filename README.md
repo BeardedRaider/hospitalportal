@@ -1,3 +1,6 @@
+FEtting whit screen, i am unable to do anything, cant test login, and i keep getting the server failing.
+
+
 ENV file needs installing on other devices
 .env file form here to my desktop needs transfering
 
