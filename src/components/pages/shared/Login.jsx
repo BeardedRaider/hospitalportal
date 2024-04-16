@@ -1,11 +1,7 @@
-<<<<<<< HEAD
+
 import React, { useEffect, useState } from "react";
-=======
-import React, { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-// import axios from "axios";
-// import { useNavigate } from "react-router-dom"
->>>>>>> 301f49fe859c1f1a7019ced4bb2a3a0a8d76c088
+import axios from 'axios';
 
 function Login() {
     const [patient_number, setPatientNumber] = useState('');
