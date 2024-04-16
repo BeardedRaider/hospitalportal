@@ -24,9 +24,6 @@ mongoose.connection.on('connected', () => {
     console.log('Mongoose is connected!!!');
 });/* mongoose.connection.on() is used to check if the connection is successful. */
 
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-});/* app.listen() is used to start the server.  */
 
 //Route to handle user data
 app.get('/api/users', async (req, res) => {
