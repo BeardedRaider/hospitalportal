@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import ReorderIcon from '@mui/icons-material/Reorder';    
 import '../../styles/navbar.css';
 
 const Navbar = () => {
@@ -27,19 +26,13 @@ const Navbar = () => {
     console.log('Parents click here:', parent);
   }, [token, parent]);
 
-  const [openLinks, setOpenLinks] = useState(false);
-
-    const toggleNavbar = () => {
-        setOpenLinks(!openLinks)
-    };
-
   return (
     <div className="navbar">
-        
-      <div className='leftSide'  id={openLinks ? "open" : "close"}>
+      <div>
         <img  className="logo" src={process.env.PUBLIC_URL + '/images/health.png'} alt='LOGO' />
-      </div>
-        <ul className="flex">
+        </div>
+        <div>
+        <ul>
             {token ? (
             <>
                 {parent ? (
@@ -67,6 +60,7 @@ const Navbar = () => {
             )}
         </ul>
       </div>
+    </div>
     
   );
 };
