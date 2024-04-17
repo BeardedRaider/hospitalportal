@@ -32,11 +32,11 @@ function Login() {
       } else {
         localStorage.removeItem('parent');
       }
-      //if user is parent redirenct to parent dash
+      //if user is parent redirect to parent dash
       if (parent) {
         navigate('/parentDashboard');
       } else {
-        navigate('/dashboard');
+        navigate('/dashboard');//if user is not parent redirect to dash
       }
     } catch (error) {
       //if login fails log the error on server
