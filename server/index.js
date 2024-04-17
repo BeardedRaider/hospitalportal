@@ -24,7 +24,29 @@ mongoose.connection.on('connected', () => {
     console.log('Mongoose is connected!!!');
 });/* mongoose.connection.on() is used to check if the connection is successful. */
 
-
+app.post('/api/register', async (req, res) => {
+    try {
+      const { patient_number, password } = req.body;
+  
+      // Check if the patient already exists
+      const existingUser = await User.findOne({ patient_number });
+      if (existingUser) {
+        return res.status(400).json({ error: 'patient already registered' });
+      }
+  
+      // Hash the password before saving it to the database
+      const hashedPassword = await bcrypt.hash(password, 10);
+  
+      // Create a new user instance and save it to the 'users' collection
+      const newUser = new User({ patient_number, password: hashedPassword });
+      await newUser.save();
+  
+      res.status(201).json({ message: 'User registered successfully' });
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ error: 'Internal server error' });
+    }
+  });
 //Route to handle user data
 app.get('/api/users', async (req, res) => {
 try {

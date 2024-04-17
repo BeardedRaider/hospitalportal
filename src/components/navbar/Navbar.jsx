@@ -19,6 +19,7 @@ function Navbar() {
             <div className='hiddenLinks'>
                 <Link to='/'>Home</Link>
                 <Link to='/login'>Login</Link>
+                <Link to='/register'>Register</Link>
                 {/* <Link to='/parent'>Parent</Link>
                 <Link to='/patient'>Patient</Link>
                 <Link to='/games'>Games</Link> */}
@@ -27,6 +28,8 @@ function Navbar() {
         <div className='rightSide'>
             <Link to='/'>Home</Link>
             <Link to='/login'>Login</Link>
+            <Link to='/register'>Register</Link>
+
             {/* <Link to='/parent'>Parent</Link>
             <Link to='/patient'>Patient</Link>
             <Link to='/games'>Games</Link> */}
