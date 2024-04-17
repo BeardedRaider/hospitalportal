@@ -1,3 +1,4 @@
+//This is not working as intended, but shows the concept of a working register for new users
 // Register.js
 import React, { useState } from 'react';
 import axios from 'axios';
@@ -58,14 +59,14 @@ const Register = () => {
         {/* <!-- Left: Image --> */}
         <div class="w-1/3 h-screen hidden justify lg:block">
             <img
-                src="../images/register.jpg"
+                src="../images/register1.jpg"
                 alt=""
                 class="object-cover w-full h-full"
             />
         </div>
         {/* <!-- Right: Register Form --> */}
         <div class="lg:p-20 md:p-24 sm:10 p-4 w-2/3 lg:w-2/3 overflow-auto h-screen">
-          <h1 class="text-2xl font-semibold mb-4">Register</h1>
+          <h1 class="text-2xl font-semibold mb-2">Register</h1>
           
           <form onSubmit={handleRegister}>
           {/* <!-- -------First Name Input------ --> */}

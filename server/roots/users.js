@@ -30,13 +30,12 @@ const formattedUser = {
     firstname: user.firstname,
     surname: user.surname,
     email: user.email,
-    guardian: user.guardian, // Add this line
+    guardian: user.guardian, 
     guardian_name: user.guardian_name,
     dob: user.dob,
     department: user.department,
     notes: user.notes,
-    is_admin: user.is_admin, // Add this line
-    // Add any additional fields you want to include
+    is_admin: user.is_admin, 
     };
   
     res.json(formattedUser);

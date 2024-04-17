@@ -72,7 +72,7 @@ useEffect(() => {
             {/* <!-- -------Username Input------ --> */}
             <div class="mb-4">
               <label for="patient_number" class="block text-gray-600">
-                Username
+                {/* Patient Number */}
               </label>
               <input
                 type="text"
@@ -87,7 +87,7 @@ useEffect(() => {
             {/* <!-------- Password Input --------> */}
             <div class="mb-4">
               <label for="password" class="block text-gray-600">
-                Password
+                {/* Password */}
               </label>
               <input
                 id="password"

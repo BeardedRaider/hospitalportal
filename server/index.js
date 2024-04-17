@@ -26,8 +26,13 @@ mongoose.connection.on('connected', () => {
 });/* mongoose.connection.on() is used to check if the connection is successful. */
 
 app.post('/api/register', async (req, res) => {
+    console.log(req.body);
     try {
-      const { patient_number, password, firstname, surname, email, guardian, guardian_name, dob, department, notes 
+      const { patient_number, password, firstname, surname, email, guardian, guardian_name, dob, department, notes
+//comented out as its not working 
+
+
+
     } = req.body;
   
       // Check if the patient already exists
