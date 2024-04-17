@@ -3,56 +3,59 @@ import React from 'react'
 function Home() {
   return (
     <div>
-      <section class="bg-white dark:bg-gray-900">
+        <section class="bg-white dark:bg-green-900">
         
-    <div class="container mx-auto px-6 pt-28">
-        <h1 class="text-2xl font-semibold text-gray-800 dark:text-white lg:text-4xl">Portfolio</h1>
+            <div class="container mx-auto px-6 pt-28">
+                <h1 class="text-2xl font-semibold text-gray-800 dark:text-white lg:text-4xl">Portfolio</h1>
 
-        <div class="mt-8 lg:-mx-12 lg:flex xl:mt-16">
-        <div class="lg:mx-12">
-            <h1 class="text-xl font-semibold text-gray-800 dark:text-white">Table of Content</h1>
+                <div class="mt-8 lg:-mx-12 lg:flex xl:mt-16">
+                <div class="lg:mx-12">
+                    <h1 class="text-xl font-semibold text-gray-800 dark:text-white">Table of Content</h1>
 
-            <div class="mt-4 space-y-4 lg:mt-8">
-            <button class="block text-blue-500 hover:underline dark:text-blue-400">Web design</button >
-            <button class="block text-gray-500 hover:underline dark:text-gray-300">App design</button >
-            <button class="block text-gray-500 hover:underline dark:text-gray-300">Branding</button >
-            <button class="block text-gray-500 hover:underline dark:text-gray-300">Animation</button >
-            </div>
-        </div>
+                    <div class="mt-4 space-y-4 lg:mt-8">
+                    <button class="block text-blue-500 hover:underline dark:text-blue-400">Web design</button >
+                    <button class="block text-gray-500 hover:underline dark:text-gray-300">App design</button >
+                    <button class="block text-gray-500 hover:underline dark:text-gray-300">Branding</button >
+                    <button class="block text-gray-500 hover:underline dark:text-gray-300">Animation</button >
+                    </div>
+                </div>
 
-        <div class="mt-8 flex-1 lg:mx-12 lg:mt-0">
-            <div class="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
-            <div>
-                <img class="h-96 w-full rounded-lg object-cover" src="https://images.unsplash.com/photo-1621111848501-8d3634f82336?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1565&q=80" alt="" />
-                <h2 class="mt-4 text-2xl font-semibold capitalize text-gray-800 dark:text-white">Best website collections</h2>
-                <p class="mt-2 text-lg uppercase tracking-wider text-blue-500 dark:text-blue-400">Website</p>
-            </div>
+                <div class="mt-8 flex-1 lg:mx-12 lg:mt-0">
+                    <div class="grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
+                        <div>
+                            <img class="h-96 w-full rounded-lg object-cover" src="https://images.unsplash.com/photo-1621111848501-8d3634f82336?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1565&q=80" alt="" />
+                            <h2 class="mt-4 text-2xl font-semibold capitalize text-gray-800 dark:text-white">Best website collections</h2>
+                            <p class="mt-2 text-lg uppercase tracking-wider text-blue-500 dark:text-blue-400">Website</p>
+                        </div>
 
-            <div>
-                <img class="h-96 w-full rounded-lg object-cover" src="https://images.unsplash.com/photo-1621609764180-2ca554a9d6f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt="" />
-                <h2 class="mt-4 text-2xl font-semibold capitalize text-gray-800 dark:text-white">Block of Ui kit collections</h2>
-                <p class="mt-2 text-lg uppercase tracking-wider text-blue-500 dark:text-blue-400">Ui kit</p>
-            </div>
+                        <div>
+                            <img class="h-96 w-full rounded-lg object-cover" src="https://images.unsplash.com/photo-1621609764180-2ca554a9d6f2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt="" />
+                            <h2 class="mt-4 text-2xl font-semibold capitalize text-gray-800 dark:text-white">Block of Ui kit collections</h2>
+                            <p class="mt-2 text-lg uppercase tracking-wider text-blue-500 dark:text-blue-400">Ui kit</p>
+                        </div>
 
-            <div>
-                <img class="h-96 w-full rounded-lg object-cover" src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" />
-                <h2 class="mt-4 text-2xl font-semibold capitalize text-gray-800 dark:text-white">Ton’s of mobile mockup</h2>
-                <p class="mt-2 text-lg uppercase tracking-wider text-blue-500 dark:text-blue-400">Mockups</p>
-            </div>
-            </div>
-        </div>
+                        <div>
+                            <img class="h-96 w-full rounded-lg object-cover" src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="" />
+                            <h2 class="mt-4 text-2xl font-semibold capitalize text-gray-800 dark:text-white">Ton’s of mobile mockup</h2>
+                            <p class="mt-2 text-lg uppercase tracking-wider text-blue-500 dark:text-blue-400">Mockups</p>
+                        </div>
+                    </div>
+                </div>
         </div>
     </div>
-    </section>
-    <section class="bg-white dark:bg-gray-900">
-    <div class="container mx-auto px-6 pt-28">
-        <h1 class="text-3xl font-semibold capitalize text-gray-800 dark:text-white lg:text-4xl">Our Executive Team</h1>
+        </section>
 
-        <p class="my-6 max-w-2xl text-gray-500 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt ex placeat modi magni quia error alias, adipisci rem similique, at omnis eligendi optio eos harum.</p>
+    {/* --------------------------------------MEET THE TEAM------------------------------------------------ */}
 
-        <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 xl:mt-16 xl:grid-cols-4">
-        <div class="group flex transform cursor-pointer flex-col items-center rounded-xl p-8 transition-colors duration-300 hover:bg-blue-600">
-            <img class="h-32 w-32 rounded-full object-cover ring-4 ring-gray-300" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="" />
+        <section class="bg-white dark:bg-gray-900">
+        <div class="container mx-auto px-6 pt-28">
+            <h1 class="text-3xl font-semibold capitalize text-gray-800 dark:text-white lg:text-4xl">Our Executive Team</h1>
+
+            <p class="my-6 max-w-2xl text-gray-500 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo incidunt ex placeat modi magni quia error alias, adipisci rem similique, at omnis eligendi optio eos harum.</p>
+
+            <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 xl:mt-16 xl:grid-cols-4">
+            <div class="group flex transform cursor-pointer flex-col items-center rounded-xl p-8 transition-colors duration-300 hover:bg-blue-600">
+                <img class="h-32 w-32 rounded-full object-cover ring-4 ring-gray-300" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" alt="" />
 
             <h1 class="mt-4 text-2xl font-semibold capitalize text-gray-700 group-hover:text-white dark:text-white">arthur melo</h1>
 
@@ -276,15 +279,16 @@ function Home() {
         </div>
         </div>
     </div>
-    </section>
+        </section>
 
-    <section class="bg-white dark:bg-gray-900">
-    <div class="container mx-auto px-6 py-28">
-        <h1 class="text-2xl font-semibold text-gray-800 dark:text-white lg:text-4xl">Frequently asked questions.</h1>
+{/* ---------------------------------------questions--------------------------------------------------------- */}
 
-        <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:mt-16 xl:grid-cols-3">
-        <div>
-            <div class="inline-block rounded-lg bg-blue-600 p-3 text-white">
+        <section class="bg-white dark:bg-green-900">
+        <div class="container mx-auto px-6 py-28">
+            <h1 class="text-2xl font-semibold text-gray-800 dark:text-white lg:text-4xl">Frequently asked questions.</h1>
+            <div class="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2 lg:mt-16 xl:grid-cols-3">
+            <div>
+                <div class="inline-block rounded-lg bg-blue-600 p-3 text-white">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
@@ -295,84 +299,84 @@ function Home() {
 
             <p class="mt-2 text-sm text-gray-500 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident placeat, consequatur eveniet veritatis quos dignissimos beatae dolores exercitationem laboriosam officia magnam atque blanditiis illum doloremque magni ex corrupti tempora quis.</p>
             </div>
-        </div>
-
-        <div>
-            <div class="inline-block rounded-lg bg-blue-600 p-3 text-white">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
             </div>
 
             <div>
-            <h1 class="text-xl font-semibold text-gray-700 dark:text-white">What are your opening house?</h1>
+                <div class="inline-block rounded-lg bg-blue-600 p-3 text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                </div>
 
-            <p class="mt-2 text-sm text-gray-500 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident placeat, consequatur eveniet veritatis quos dignissimos beatae dolores exercitationem laboriosam officia magnam atque blanditiis illum doloremque magni ex corrupti tempora quis.</p>
-            </div>
-        </div>
+                <div>
+                <h1 class="text-xl font-semibold text-gray-700 dark:text-white">What are your opening house?</h1>
 
-        <div>
-            <div class="inline-block rounded-lg bg-blue-600 p-3 text-white">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-            </div>
-
-            <div>
-            <h1 class="text-xl font-semibold text-gray-700 dark:text-white">Do i need button  referral?</h1>
-
-            <p class="mt-2 text-sm text-gray-500 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident placeat, consequatur eveniet veritatis quos dignissimos beatae dolores exercitationem laboriosam officia magnam atque blanditiis illum doloremque magni ex corrupti tempora quis.</p>
-            </div>
-        </div>
-
-        <div>
-            <div class="inline-block rounded-lg bg-blue-600 p-3 text-white">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
+                <p class="mt-2 text-sm text-gray-500 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident placeat, consequatur eveniet veritatis quos dignissimos beatae dolores exercitationem laboriosam officia magnam atque blanditiis illum doloremque magni ex corrupti tempora quis.</p>
+                </div>
             </div>
 
             <div>
-            <h1 class="text-xl font-semibold text-gray-700 dark:text-white">Is the cost of the appoinment covered by private health insurance?</h1>
+                <div class="inline-block rounded-lg bg-blue-600 p-3 text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                </div>
 
-            <p class="mt-2 text-sm text-gray-500 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident placeat, consequatur eveniet veritatis quos dignissimos beatae dolores exercitationem laboriosam officia magnam atque blanditiis illum doloremque magni ex corrupti tempora quis.</p>
-            </div>
-        </div>
+                <div>
+                <h1 class="text-xl font-semibold text-gray-700 dark:text-white">Do i need button  referral?</h1>
 
-        <div>
-            <div class="inline-block rounded-lg bg-blue-600 p-3 text-white">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
-            </div>
-
-            <div>
-            <h1 class="text-xl font-semibold text-gray-700 dark:text-white">What is your cancellation policy?</h1>
-
-            <p class="mt-2 text-sm text-gray-500 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident placeat, consequatur eveniet veritatis quos dignissimos beatae dolores exercitationem laboriosam officia magnam atque blanditiis illum doloremque magni ex corrupti tempora quis.</p>
-            </div>
-        </div>
-
-        <div>
-            <div class="inline-block rounded-lg bg-blue-600 p-3 text-white">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-            </svg>
+                <p class="mt-2 text-sm text-gray-500 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident placeat, consequatur eveniet veritatis quos dignissimos beatae dolores exercitationem laboriosam officia magnam atque blanditiis illum doloremque magni ex corrupti tempora quis.</p>
+                </div>
             </div>
 
             <div>
-            <h1 class="text-xl font-semibold text-gray-700 dark:text-white">What are the parking and public transport options?</h1>
+                <div class="inline-block rounded-lg bg-blue-600 p-3 text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                </div>
 
-            <p class="mt-2 text-sm text-gray-500 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident placeat, consequatur eveniet veritatis quos dignissimos beatae dolores exercitationem laboriosam officia magnam atque blanditiis illum doloremque magni ex corrupti tempora quis.</p>
+                <div>
+                <h1 class="text-xl font-semibold text-gray-700 dark:text-white">Is the cost of the appoinment covered by private health insurance?</h1>
+
+                <p class="mt-2 text-sm text-gray-500 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident placeat, consequatur eveniet veritatis quos dignissimos beatae dolores exercitationem laboriosam officia magnam atque blanditiis illum doloremque magni ex corrupti tempora quis.</p>
+                </div>
+            </div>
+
+            <div>
+                <div class="inline-block rounded-lg bg-blue-600 p-3 text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                </div>
+
+                <div>
+                <h1 class="text-xl font-semibold text-gray-700 dark:text-white">What is your cancellation policy?</h1>
+
+                <p class="mt-2 text-sm text-gray-500 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident placeat, consequatur eveniet veritatis quos dignissimos beatae dolores exercitationem laboriosam officia magnam atque blanditiis illum doloremque magni ex corrupti tempora quis.</p>
+                </div>
+            </div>
+
+            <div>
+                <div class="inline-block rounded-lg bg-blue-600 p-3 text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                </div>
+
+                <div>
+                    <h1 class="text-xl font-semibold text-gray-900 dark:text-white">What are the parking and public transport options?</h1>
+
+                    <p class="mt-2 text-sm text-gray-500 dark:text-gray-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident placeat, consequatur eveniet veritatis quos dignissimos beatae dolores exercitationem laboriosam officia magnam atque blanditiis illum doloremque magni ex corrupti tempora quis.</p>
+                </div>
+            </div>
             </div>
         </div>
-        </div>
-    </div>
-    </section>
+        </section>
 
 
-{/* COULD I PUT THE FOOTER IN ITS OWN SECTION? AS k TOMORROW */}
-    <footer class="bg-white dark:bg-gray-900">
+{/* COULD I PUT THE FOOTER IN ITS OWN SECTION? ASK TOMORROW */}
+        <footer class="bg-white dark:bg-gray-900">
     <div class="container mx-auto px-6 py-20">
         <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
         <div class="sm:col-span-2">
@@ -431,10 +435,10 @@ function Home() {
             </button>
         </div>
         </div>
+        </div>
+        </footer>
     </div>
-    </footer>
-    </div>
-  );
+    );
 }
 
 export default Home
