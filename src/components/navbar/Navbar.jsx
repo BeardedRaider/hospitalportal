@@ -4,23 +4,33 @@ import '../../styles/navbar.css';
 
 const Navbar = () => {
   const navigate = useNavigate();
+  const [token, setToken] = useState(localStorage.getItem('token'));
+  const [parent, setParent] = useState(localStorage.getItem('parent') === 'true');
 
   const handleLogout = () => {
     localStorage.removeItem('token');
+    setToken(null); // Update the state
     navigate('/');
   };
 
-  const [token, setToken] = useState(null);
-  const [parent, setParent] = useState(false);
-
+  
+  // Listen for changes in the local storage
   useEffect(() => {
-    const storedToken = localStorage.getItem('token');
-    const storedParent = localStorage.getItem('parent');
+    const handleStorageChange = () => {
+      setToken(localStorage.getItem('token'));
+      setParent(localStorage.getItem('parent') === 'true');
+    };
 
-    setToken(storedToken);
-    setParent(storedParent === 'true');
-  }, []);
+    // Attach the event listener
+    window.addEventListener('storage', handleStorageChange);
 
+    // Detach the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('storage', handleStorageChange);
+      };
+    }, []);
+
+    // Log the changes in token and parent state
   useEffect(() => {
     console.log('Token has changed:', token);
     console.log('Parents click here:', parent);
@@ -33,35 +43,36 @@ const Navbar = () => {
         </div>
         <div>
         <ul>
-            {token ? (
+            {token ? ( //if logged in
             <>
-                {parent ? (
+                {parent ? ( //if parent
                 <>
-                    <li><Link to="/parent">Dashboard</Link></li>
-                    <li><Link to="/appointments">Childs Appointment</Link></li>
+                  <li><Link to="/parent">Dashboard</Link></li>
+                  <li><Link to="/appointments">Childs Appointment</Link></li>
+                  <li><Link to="https://www.nhsinform.scot/" target='_blank'>NHS Inform</Link></li>
+                  <li><button onClick={handleLogout}>Logout</button></li>
                 </>
-                ) : (
+                ) : ( //if not parent
                 <>
-                    <li><Link to="/patient">Home</Link></li>
-                    <li><Link to="/appointment">Appointment</Link></li>
-                    <li><Link to="/games">Entertainment</Link></li>
+                  <li><Link to="/patient">Home</Link></li>
+                  <li><Link to="/appointment">Appointments</Link></li>
+                  <li><Link to="/games">Entertainment</Link></li>
+                  <li><button onClick={handleLogout}>Logout</button></li>
                 </>
                 )}
-                <li><button onClick={handleLogout}>Logout</button></li>
-            </>
-            ) : (
-            <>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/login">Login</Link></li>
-                <li><Link to="/register">Register</Link></li>
-                <li><Link to="https://www.nhsinform.scot/" target='_blank'>NHS Inform</Link></li>
                 
+            </>
+            ) : ( //if not logged in
+            <>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/login">Login</Link></li>
+              <li><Link to="/register">Register</Link></li>
+              <li><Link to="https://www.nhsinform.scot/" target='_blank'>NHS Inform</Link></li>   
             </>
             )}
         </ul>
       </div>
     </div>
-    
   );
 };
 

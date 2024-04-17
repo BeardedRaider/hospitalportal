@@ -33,12 +33,15 @@ function Login() {
       } else {
         localStorage.removeItem('parent');
       }
+      
       //if user is parent redirect to parent dash
       if (parent) {
         navigate('/parent');//redirect to parent dash
       } else {
         navigate('/patient');//if user is not parent redirect to patient dash
       }
+          // Force a full page reload
+    window.location.reload();
     } catch (error) {
       //if login fails log the error on server
       console.error('Login failed:', error.response.data.error);
@@ -52,6 +55,7 @@ useEffect(() => {
   if (storedParent) {
     setParent(true);
   }
+  
 }, []);
 
 
