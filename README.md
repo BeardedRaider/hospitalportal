@@ -1,3 +1,9 @@
+Some Issues fixed
+
+Folder needs to be on the C drive, i think this is dure to node.js neing installed on the C drive????
+
+Project now works on C drive anfter being , moved from D
+
 Getting white screen, I am unable to do anything, cant test login, and i keep getting the server failing.
 
 ------------------------------------------------------------------------
