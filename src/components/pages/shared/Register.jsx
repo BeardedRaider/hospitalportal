@@ -15,12 +15,11 @@ const Register = () => {
   const [department, setDepartment] = useState('');
   const [notes, setNotes] = useState('');
 
-  const [message, setMessage] = useState('');
-  const [showMessage, setShowMessage] = useState(false);//shows the message after registration
-
   //posts the data to the server
-  const handleRegister = async () => {
-    try {
+  const handleRegister = async (event) => {
+  // Prevent the form from refreshing the page (not working)
+    event.preventDefault();
+  try {
       await axios.post('http://localhost:5000/api/register', {
         patient_number,
         password,
@@ -45,17 +44,11 @@ const Register = () => {
       setDepartment('');
       setNotes('');
 
-      // Show the message and then hide it after 3 seconds
-      setMessage('Registration successful!');
-      setShowMessage(true);
-      setTimeout(() => setShowMessage(false), 3000);
 
+
+      console.log('Registration successful');
     } catch (error) {
-      // Handle the error here
-      console.error(error);
-      setMessage('Registration failed. Please try again.'); // Add this line
-      setShowMessage(true);
-      setTimeout(() => setShowMessage(false), 3000);
+      console.error('Registration failed:', error.response.data.error);
     }
   };
 
@@ -246,7 +239,6 @@ const Register = () => {
           </div>
         </div>
       </div>
-      {showMessage && <p class="transition-opacity duration-300 ease-in-out opacity-0">{message}</p>}
     </div>
   );
 };

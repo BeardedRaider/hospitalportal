@@ -4,6 +4,7 @@ const cors = require('cors');
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 require('dotenv').config();/* dotenv is a zero-dependency module that loads environment variables from a .env file into process.env. Storing configuration in the environment separate from code is based on The Twelve-Factor App methodology. */
+
 const User = require('./models/User');/* User is a model that is used to create a new user. */
 require('./models/Department');/* Department is a model that is used to create a new department. */
 
@@ -26,7 +27,8 @@ mongoose.connection.on('connected', () => {
 
 app.post('/api/register', async (req, res) => {
     try {
-      const { patient_number, password } = req.body;
+      const { patient_number, password, firstname, surname, email, guardian, guardian_name, dob, department, notes 
+    } = req.body;
   
       // Check if the patient already exists
       const existingUser = await User.findOne({ patient_number });
