@@ -112,14 +112,11 @@ useEffect(() => {
                 Parent/Guardian please select
               </label>
             </div>
-            {/* <!-- Forgot Password Link --> */}
-            <div class="mb-6 text-blue-500">
-              <button class="hover:underline" type="submit" onClick={handleLogin}>Sign in</button>
-            </div>
+            
             {/* <!-- Login Button --> */}
             <button
               type="submit"
-              class="bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-md py-2 px-4 w-full"
+              class="bg-blue-500 hover:bg-blue-600 text-white font-semibold rounded-md py-2 px-4 w-full" onClick={handleLogin}
             >
               Login
             </button>
