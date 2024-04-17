@@ -34,9 +34,9 @@ function Login() {
       }
       //if user is parent redirect to parent dash
       if (parent) {
-        navigate('/parentDashboard');
+        navigate('/parent');//redirect to parent dash
       } else {
-        navigate('/dashboard');//if user is not parent redirect to dash
+        navigate('/patient');//if user is not parent redirect to patient dash
       }
     } catch (error) {
       //if login fails log the error on server
