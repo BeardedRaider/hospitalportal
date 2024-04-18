@@ -7,6 +7,7 @@ import Patient from "./components/pages/patient/Patient";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Games from "./components/pages/patient/Games";
 import Register from "./components/pages/shared/Register";
+import Test from "./components/pages/shared/Test";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/patient" element={<Patient />} />
           <Route path="/games" element={<Games />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/test" element={<Test />} />
         </Routes>
       </Router>
     </div>

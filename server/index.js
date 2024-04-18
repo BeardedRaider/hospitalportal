@@ -80,7 +80,7 @@ jwt.verify(token, 'your-secret-key', async (err, decoded) => {
     const formattedUser = { 
     _id: user._id, 
     email: user.email,
-    firstname: user.firstname,
+    forename: user.forename,
     surname: user.surname,
     guardian: user.guardian,
     guardian_name: user.guardian_name,
