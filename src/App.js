@@ -1,6 +1,6 @@
 // Importing necessary modules and components
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes, Redirect } from "react-router-dom";// Importing routing components from react-router-dom
+import { BrowserRouter as Router, Route, Routes,} from "react-router-dom";// Importing routing components from react-router-dom
 
 import "./App.css"; // Importing the CSS for the App component
 import Navbar from "./components/navbar/Navbar"; // Importing the Navbar component
@@ -10,6 +10,7 @@ import Parent from "./components/pages/parent/Parent"; // Importing the Parent c
 import Patient from "./components/pages/patient/Patient"; // Importing the Patient component
 import Games from "./components/pages/patient/Games"; // Importing the Games component
 import Register from "./components/pages/shared/Register"; // Importing the Register component
+import Denied from "./components/pages/shared/Denied"; // Importing the Denied component
 import Test from "./components/pages/shared/Test"; // Importing the Test component
 
 // Defining the App component
@@ -52,9 +53,10 @@ function App() {
     <div className="App">
       <Router>
       <Navbar className={scrolled ? 'scrolled' : ''} isDesktop={isDesktop} />
-      {isDesktop ? <redirect to="/Redirect" /> : (
+      {isDesktop ? <denied to="/Denied" /> : (
         <Routes>
           {/* components are rendered when the URL path is exactly */}
+          <Route path="denied" exact element={<Denied />} />
           <Route path="/" exact element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/parent" element={<Parent />} />

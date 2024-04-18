@@ -1,11 +1,8 @@
-import { Redirect } from "react-router-dom";
-import Navbar from "./components/navbar/Navbar";
+import React from "react";
 
-function App () {
+function Denied () {
   return (
-    <div className="App">
-      <Navbar />
-
+    <div className="noAccess">
       <div>
         <h1>Redirecting...</h1>
         <p>If you are not redirected, click <a href="/home">here</a>.</p>
@@ -16,4 +13,4 @@ function App () {
   );
 }
 
-export default Redirect;
+export default Denied;
