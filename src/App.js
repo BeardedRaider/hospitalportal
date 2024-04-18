@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Navbar />
+        <Navbar className="sticky" />
         <Routes>
           {/* components are rendered when the URL path is exactly */}
           <Route path="/" exact element={<Home />} />
