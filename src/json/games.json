@@ -21,5 +21,11 @@
         "image": "/images/img4.jpeg",
         "name": "Burger",
         "description": "Burger with cheese and tomato"
+    },
+    
+    {
+        "image": "/images/pokeball.png",
+        "name": "Pokemon Match",
+        "description": "Burger with cheese and tomato"
     }
 ]

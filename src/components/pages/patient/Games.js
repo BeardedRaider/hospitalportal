@@ -1,4 +1,3 @@
-import react from "react";
 import GameCard from "../../GameCard";
 import gameData from "../../../json/games.json";
 
