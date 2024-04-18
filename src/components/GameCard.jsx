@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 <link rel="stylesheet" href="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/css/main.ad49aa9b.css" />
 
