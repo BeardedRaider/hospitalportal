@@ -21,7 +21,7 @@ function App() {
   // The Routes component contains several Route components, each of which renders a different component based on the current URL path.
 
   const [scrolled, setScrolled] = useState(false);//state for navbar
-  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 768);//checks if the screen is desktop or mobile
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 810);//checks if the screen is desktop or mobile
 
 
   useEffect(() => {
@@ -41,7 +41,7 @@ function App() {
   }, [scrolled]);
 
   useEffect(() => {
-    const handleResize = () => setIsDesktop(window.innerWidth > 768);
+    const handleResize = () => setIsDesktop(window.innerWidth > 810);
     window.addEventListener('resize', handleResize);
 
     return () => {

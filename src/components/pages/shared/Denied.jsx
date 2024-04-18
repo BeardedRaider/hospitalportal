@@ -1,13 +1,12 @@
 import React from "react";
+import "../../../styles/denied.css";
 
 function Denied () {
   return (
     <div className="noAccess">
-      <div>
-        <h1>Redirecting...</h1>
-        <p>If you are not redirected, click <a href="/home">here</a>.</p>
-      <img src="../../../../public/images/ipad-mobile.jpg" alt="" />
-      </div>
+      <h1 className="title">Access Denied</h1>
+      <p>You do not have permission to view this page</p>
+      <img className="imgDenied" src="../../../../public/images/family.jpg" alt="" />
 
     </div>
   );
