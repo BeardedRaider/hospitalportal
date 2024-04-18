@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import '../../styles/navbar.css';
 
-const Navbar = () => {
+const Navbar = ({ className }) => {
   const navigate = useNavigate();
   const [token, setToken] = useState(localStorage.getItem('token'));
   const [parent, setParent] = useState(localStorage.getItem('parent') === 'true');
@@ -37,7 +37,7 @@ const Navbar = () => {
   }, [token, parent]);
 
   return (
-    <div className="navbar">
+    <div className={`navbar ${className}`}>
       <div>
         <img  className="logo" src={process.env.PUBLIC_URL + '/images/health.png'} alt='LOGO' />
         </div>

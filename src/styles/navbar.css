@@ -5,6 +5,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); 
   }  
 
 .logo {
@@ -22,3 +26,7 @@
     margin-right: 40px;
 }
 
+.navbar.scrolled {
+  background-color: rgb(117, 182, 168);
+  transition: 0.5s;
+}

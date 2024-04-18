@@ -1,4 +1,6 @@
 // Importing necessary modules and components
+import React, { useState, useEffect } from 'react';
+
 import "./App.css"; // Importing the CSS for the App component
 import Navbar from "./components/navbar/Navbar"; // Importing the Navbar component
 import Home from "./components/pages/shared/Home"; // Importing the Home component
@@ -13,12 +15,33 @@ import Test from "./components/pages/shared/Test"; // Importing the Test compone
 // Defining the App component
 
 function App() {
+  
   // The App component returns a Router component that wraps a Navbar component and a Routes component.
   // The Routes component contains several Route components, each of which renders a different component based on the current URL path.
+
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 50;
+      if (isScrolled !== scrolled) {
+        setScrolled(!scrolled);
+      }
+    };
+
+    document.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      // cleanup
+      document.removeEventListener('scroll', handleScroll);
+    };
+  }, [scrolled]);
+
+
   return (
     <div className="App">
       <Router>
-        <Navbar className="sticky" />
+      <Navbar className={scrolled ? 'scrolled' : ''} />
         <Routes>
           {/* components are rendered when the URL path is exactly */}
           <Route path="/" exact element={<Home />} />
