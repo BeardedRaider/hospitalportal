@@ -11,7 +11,7 @@ const Test = () => {
     <div>
     {user && (
         <>
-        <p>user Firstname : {user.forename}</p>
+        <p>user Firstname : {user.firstname}</p>
         <p>user Surname : {user.surname}</p>
         {/* to bring in linked department info  */}
         <p>Consultant : {user.department_id.consultant}</p>

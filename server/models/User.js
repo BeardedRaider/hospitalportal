@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');/* Mongoose is a MongoDB object modeling tool designed to work in an asynchronous environment. Mongoose supports both promises and callbacks. */
 
 const userSchema = new mongoose.Schema({
-    forename: String,
+    firstname: String,
     surname: String,
     email: String,
     password: String,
