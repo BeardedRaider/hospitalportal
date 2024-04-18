@@ -1,5 +1,6 @@
 // Importing necessary modules and components
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes, Redirect } from "react-router-dom";// Importing routing components from react-router-dom
 
 import "./App.css"; // Importing the CSS for the App component
 import Navbar from "./components/navbar/Navbar"; // Importing the Navbar component
@@ -7,7 +8,6 @@ import Home from "./components/pages/shared/Home"; // Importing the Home compone
 import Login from "./components/pages/shared/Login"; // Importing the Login component
 import Parent from "./components/pages/parent/Parent"; // Importing the Parent component
 import Patient from "./components/pages/patient/Patient"; // Importing the Patient component
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom"; // Importing routing components from react-router-dom
 import Games from "./components/pages/patient/Games"; // Importing the Games component
 import Register from "./components/pages/shared/Register"; // Importing the Register component
 import Test from "./components/pages/shared/Test"; // Importing the Test component
@@ -19,7 +19,9 @@ function App() {
   // The App component returns a Router component that wraps a Navbar component and a Routes component.
   // The Routes component contains several Route components, each of which renders a different component based on the current URL path.
 
-  const [scrolled, setScrolled] = useState(false);
+  const [scrolled, setScrolled] = useState(false);//state for navbar
+  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 768);//checks if the screen is desktop or mobile
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,11 +39,20 @@ function App() {
     };
   }, [scrolled]);
 
+  useEffect(() => {
+    const handleResize = () => setIsDesktop(window.innerWidth > 768);
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
     <div className="App">
       <Router>
-      <Navbar className={scrolled ? 'scrolled' : ''} />
+      <Navbar className={scrolled ? 'scrolled' : ''} isDesktop={isDesktop} />
+      {isDesktop ? <redirect to="/Redirect" /> : (
         <Routes>
           {/* components are rendered when the URL path is exactly */}
           <Route path="/" exact element={<Home />} />
@@ -52,6 +63,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/test" element={<Test />} /> 
         </Routes>
+      )}
       </Router>
     </div>
   );

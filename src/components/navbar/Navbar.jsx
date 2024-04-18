@@ -2,15 +2,15 @@ import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import '../../styles/navbar.css';
 
-const Navbar = ({ className }) => {
+const Navbar = ({ className, isDesktop}) => {   // Navbar component
   const navigate = useNavigate();
   const [token, setToken] = useState(localStorage.getItem('token'));
   const [parent, setParent] = useState(localStorage.getItem('parent') === 'true');
 
-  const handleLogout = () => {
-    localStorage.removeItem('token');
+  const handleLogout = () => {// Logout function
+    localStorage.removeItem('token');// Remove the token from the local storage
     setToken(null); // Update the state
-    navigate('/');
+    navigate('/');// Redirect to the home page
   };
 
   
@@ -43,7 +43,11 @@ const Navbar = ({ className }) => {
         </div>
         <div>
         <ul>
-            {token ? ( //if logged in
+          {isDesktop ? (
+          <>
+            <li><Link to="https://www.nhsinform.scot/" target='_blank'>NHS Inform</Link></li>
+          </>
+          ) : token ? ( //if logged in
             <>
                 {parent ? ( //if parent
                 <>

@@ -1,13 +1,13 @@
-import { redirect } from "react-router-dom";
+import { Redirect } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 
 function App () {
   return (
     <div className="App">
       <Navbar />
-      <img src="" alt="" />
+      <img src="../../../../public/images/ipad-mobile.jpg" alt="" />
     </div>
   );
 }
 
-export default redirect
+export default Redirect;
