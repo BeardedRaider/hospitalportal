@@ -24,7 +24,7 @@ function Parent(){
     <div className="flex-auto px-4 lg:px-10 py-10 pt-0">
       <form>
         <h6 className="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
-          User Information
+          Patient Information
         </h6>
         <div className="flex flex-wrap">
           <div className="w-full lg:w-6/12 px-4">
@@ -46,17 +46,17 @@ function Parent(){
           <div className="w-full lg:w-6/12 px-4">
             <div className="relative w-full mb-3">
               <label className="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="grid-password">
-                First Name
+                Guardian Name
               </label>
-              <input type="text" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" defaultValue="Lucky"/>
+              <input type="text" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" defaultValue={user.guardian_name}/>
             </div>
           </div>
           <div className="w-full lg:w-6/12 px-4">
             <div className="relative w-full mb-3">
               <label className="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="grid-password">
-                Last Name
+                Relationship to Patient
               </label>
-              <input type="text" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" defaultValue="Jesse"/>
+              <input type="text" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" defaultValue={user.guardian}/>
             </div>
           </div>
         </div>
@@ -64,55 +64,27 @@ function Parent(){
         <hr className="mt-6 border-b-1 border-blueGray-300"/>
 
         <h6 className="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
-          Contact Information
+          Patient Notes
         </h6>
+
         <div className="flex flex-wrap">
           <div className="w-full lg:w-12/12 px-4">
             <div className="relative w-full mb-3">
               <label className="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="grid-password">
-                Address
+                Patient Notes
               </label>
-              <input type="text" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" defaultValue="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09"/>
-            </div>
-          </div>
-          <div className="w-full lg:w-4/12 px-4">
-            <div className="relative w-full mb-3">
-              <label className="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="grid-password">
-                City
-              </label>
-              <input type="email" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" defaultValue="New York"/>
-            </div>
-          </div>
-          <div className="w-full lg:w-4/12 px-4">
-            <div className="relative w-full mb-3">
-              <label className="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="grid-password">
-                Country
-              </label>
-              <input type="text" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" defaultValue="United States"/>
-            </div>
-          </div>
-          <div className="w-full lg:w-4/12 px-4">
-            <div className="relative w-full mb-3">
-              <label className="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="grid-password">
-                Postal Code
-              </label>
-              <input type="text" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" defaultValue="Postal Code"/>
+              <div className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" rows="4">{user.notes}</div>
             </div>
           </div>
         </div>
-
-        <hr className="mt-6 border-b-1 border-blueGray-300"/>
-
-        <h6 className="text-blueGray-400 text-sm mt-3 mb-6 font-bold uppercase">
-          About Me
-        </h6>
+        
         <div className="flex flex-wrap">
           <div className="w-full lg:w-12/12 px-4">
             <div className="relative w-full mb-3">
               <label className="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="grid-password">
-                About me
+                Appointment Notes
               </label>
-              <textarea className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" rows="4"> A beautiful UI Kit and Admin for JavaScript &amp; Tailwind CSS. It is Freeand Open Source.</textarea>
+              <div className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" rows="4">{user.appointment_notes}</div>
             </div>
           </div>
         </div>
