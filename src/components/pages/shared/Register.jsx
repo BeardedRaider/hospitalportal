@@ -65,7 +65,7 @@ const Register = () => {
             />
         </div>
         {/* <!-- Right: Register Form --> */}
-        <div class="lg:p-20 md:p-24 sm:10 p-4 w-2/3 lg:w-2/3 overflow-auto h-screen">
+        <div class="lg:p-20 md:p-24 sm:10 p-4 w-2/3 lg:w-2/3 h-screen">
           <h1 class="text-2xl font-semibold mb-2">Register</h1>
           
           <form onSubmit={handleRegister}>

@@ -285,7 +285,7 @@ function Home() {
       </section>
 {/* --------------------------------------------------- */}
       {/* COULD I PUT THE FOOTER IN ITS OWN SECTION? ASK TOMORROW */}
-      <footer class="bg-white dark:bg-green-600">
+      <footer class="bg-white footerStyle">
         <div class="container mx-auto px-6 py-20">
           <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
             <div class="sm:col-span-2">

@@ -36,3 +36,8 @@
     position: relative;
     z-index: 100;
 }
+
+.footerStyle {
+    background-color: rgb(32, 217, 159);
+
+}

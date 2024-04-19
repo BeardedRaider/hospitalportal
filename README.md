@@ -1,3 +1,9 @@
+
+rfce - will create a component for react and name it based on your file name
+
+You can also type rfc and then other letters to do other things like props vs will tell me what they are should i need it.
+
+
 Some Issues fixed
 
 Folder needs to be on the C drive, i think this is dure to node.js neing installed on the C drive????
