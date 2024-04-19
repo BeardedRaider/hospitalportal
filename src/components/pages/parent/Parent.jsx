@@ -1,10 +1,15 @@
 import React from 'react'
+import UserInformation from '../../UserInformation'
 
 function Parent(){
+    const user = UserInformation()
+
   return (
+    
     <div>
         <section className=" py-1 bg-blueGray-50">
 <div className="w-full lg:w-8/12 px-4 mx-auto mt-6">
+  {user &&(
   <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-blueGray-100 border-0">
     <div className="rounded-t bg-white mb-0 px-6 py-6">
       <div className="text-center flex justify-between">
@@ -35,7 +40,7 @@ function Parent(){
               <label className="block uppercase text-blueGray-600 text-xs font-bold mb-2" htmlFor="grid-password">
                 Email address
               </label>
-              <input type="email" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" defaultValue="jesse@example.com"/>
+              <input type="email" className="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 bg-white rounded text-sm shadow focus:outline-none focus:ring w-full ease-linear transition-all duration-150" defaultValue={user.firstname}/>
             </div>
           </div>
           <div className="w-full lg:w-6/12 px-4">
@@ -113,7 +118,7 @@ function Parent(){
         </div>
       </form>
     </div>
-  </div>
+  </div>)}
 <footer className="relative  pt-8 pb-6 mt-2">
     <div className="container mx-auto px-4">
         <div className="flex flex-wrap items-center md:justify-between justify-center">
