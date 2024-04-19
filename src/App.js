@@ -10,7 +10,7 @@ import Parent from "./components/pages/parent/Parent"; // Importing the Parent c
 import Patient from "./components/pages/patient/Patient"; // Importing the Patient component
 import Games from "./components/pages/patient/Games"; // Importing the Games component
 import Register from "./components/pages/shared/Register"; // Importing the Register component
-import Denied from "./components/pages/shared/Denied"; // Importing the Denied component
+
 import Test from "./components/pages/shared/Test"; // Importing the Test component
 
 // Defining the App component
@@ -21,7 +21,6 @@ function App() {
   // The Routes component contains several Route components, each of which renders a different component based on the current URL path.
 
   const [scrolled, setScrolled] = useState(false);//state for navbar
-  const [isDesktop, setIsDesktop] = useState(window.innerWidth > 810);//checks if the screen is desktop or mobile
 
 
   useEffect(() => {
@@ -40,23 +39,14 @@ function App() {
     };
   }, [scrolled]);
 
-  useEffect(() => {
-    const handleResize = () => setIsDesktop(window.innerWidth > 810);
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
 
   return (
     <div className="App">
       <Router>
-      <Navbar className={scrolled ? 'scrolled' : ''} isDesktop={isDesktop} />
-      {isDesktop ? <denied to="/Denied" /> : (
+      <Navbar className={scrolled ? 'scrolled' : ''} />
         <Routes>
           {/* components are rendered when the URL path is exactly */}
-          <Route path="denied" exact element={<Denied />} />
+          
           <Route path="/" exact element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/parent" element={<Parent />} />
@@ -65,7 +55,6 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/test" element={<Test />} /> 
         </Routes>
-      )}
       </Router>
     </div>
   );

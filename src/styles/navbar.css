@@ -1,14 +1,14 @@
 .navbar {/*style for the navbar*/
     width: 100%; 
     height: 100px;
-    background-color: rgb(145, 226, 209);
+    background-color: #16A34A;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: sticky;
     top: 0;
-    z-index: 100;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); 
+    z-index: 200;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1); 
   }  
 
 .logo {/*style for the logo*/
@@ -27,6 +27,6 @@
 }
 
 .navbar.scrolled {/*style for the navbar when scrolled*/
-  background-color: rgb(145, 266, 200);
+  background: rgb(126, 204, 165, 0.9);
   transition: 0.4s;
 }
