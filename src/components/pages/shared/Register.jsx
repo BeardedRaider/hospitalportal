@@ -65,47 +65,27 @@ const Register = () => {
             />
         </div>
         {/* <!-- Right: Register Form --> */}
-        <div class="lg:p-20 md:p-24 sm:10 p-4 w-2/3 lg:w-2/3 h-screen">
+        <div class="lg:p-20 md:p-24 sm:10 p-4 w-full lg:w-1/2 h-auto">
           <h1 class="text-2xl font-semibold mb-2">Register</h1>
           
-          <form onSubmit={handleRegister}>
-          {/* <!-- -------First Name Input------ --> */}
-          <div class="mb-4">
-            <label for="firstname" class="block text-gray-600">
-              First Name
-            </label>
-            <input
-              type="text"
-              id="firstname"
-              value={firstname}
-              onChange={(e) => setFirstname(e.target.value)}
-              placeholder="First Name"
-              class="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"
-              autocomplete="off"
-            />
-          </div>
-  
-          {/* <!-- -------Surname Input------ --> */}
-          <div class="mb-4">
-            <label for="surname" class="block text-gray-600">
-              Surname
-            </label>
-            <input
-              type="text"
-              id="surname"
-              value={surname}
-              onChange={(e) => setSurname(e.target.value)}
-              placeholder="Surname"
-              class="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"
-              autocomplete="off"
-            />
-          </div>
+      <form onSubmit={handleRegister}>
+        {/* <!-- -------First Name Input------ --> */}
+        <div class="flex justify-between gap-4">
+        <div class="w-1/2">
+            <label for="firstName" class="block text-gray-600">First Name</label>
+            <input type="text" id="firstName" name="firstName" class="w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:border-green-500" />
+        </div>
+        <div class="w-1/2">
+            <label for="surname" class="block text-gray-600">Surname</label>
+            <input type="text" id="surname" name="surname" class="w-full px-4 py-2 border rounded-lg text-gray-700 focus:outline-none focus:border-green-500" />
+        </div>
+    </div>
   
           {/* <!-- -------Email Input------ --> */}
-          <div class="mb-4">
-            <label for="email" class="block text-gray-600">
+        <div class="mb-4">
+          <label for="email" class="block text-gray-600">
               Email
-            </label>
+          </label>
             <input
               type="email"
               id="email"
@@ -115,11 +95,11 @@ const Register = () => {
               class="w-full border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:border-blue-500"
               autocomplete="off"
             />
-          </div>
+        </div>
   
           {/* <!-- -------Guardian Checkbox------ --> */}
-          <div class="mb-4 flex items-center">
-            <input
+        <div class="mb-4 flex items-center">
+          <input
               type="checkbox"
               id="guardian"
               checked={guardian}
@@ -129,7 +109,7 @@ const Register = () => {
             <label for="guardian" class="text-gray-600 ml-2">
               Guardian
             </label>
-          </div>
+        </div>
   
           {/* <!-- -------Guardian Name Input------ --> */}
           <div class="mb-4">

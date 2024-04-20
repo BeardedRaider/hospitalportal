@@ -10,8 +10,8 @@ import Parent from "./components/pages/parent/Parent"; // Importing the Parent c
 import Patient from "./components/pages/patient/Patient"; // Importing the Patient component
 import Games from "./components/pages/patient/Games"; // Importing the Games component
 import Register from "./components/pages/shared/Register"; // Importing the Register component
-
 import Test from "./components/pages/shared/Test"; // Importing the Test component
+import Appointments from './components/pages/shared/Appointments';
 
 // Defining the App component
 
@@ -53,7 +53,8 @@ function App() {
           <Route path="/patient" element={<Patient />} />
           <Route path="/games" element={<Games />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/test" element={<Test />} /> 
+          <Route path="/test" element={<Test />} />
+          <Route path="/appointments" element={<Appointments />} />
         </Routes>
       </Router>
     </div>
