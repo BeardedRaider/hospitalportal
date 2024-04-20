@@ -1,18 +1,8 @@
-
+Note to Self
 rfce - will create a component for react and name it based on your file name
 
 You can also type rfc and then other letters to do other things like props vs will tell me what they are should i need it.
 
-
-Some Issues fixed
-
-Folder needs to be on the C drive, i think this is dure to node.js neing installed on the C drive????
-
-Project now works on C drive anfter being , moved from D
-
-Getting white screen, I am unable to do anything, cant test login, and i keep getting the server failing.
-
-------------------------------------------------------------------------
 ENV file needs installing on other devices
 .env file form here to my desktop needs transfering
 
@@ -21,6 +11,17 @@ npm i (if not done already)
 npm i axios
 
 all do this on desktop.
+------------------------------------------------------------------------
+Some Issues fixed
+
+Folder needs to be on the C drive, i think this is due to node.js being installed on the C drive? (it was due to this, once the folder was on C: it worked)
+
+
+Above reason caused issues
+Getting white screen, I am unable to do anything, cant test login, and i keep getting the server failing.
+
+------------------------------------------------------------------------
+
 
 
 # Getting Started with Create React App
