@@ -73,7 +73,7 @@ function Parent(){
 
       <div class="py-20 leftBox relative ">
         <div class="relative z-20 pl-12">
-          <h2 class="text-sky-950 font-black text-5xl leading-snug mb-10">Finpoint is here to help you</h2>
+          <h2 class="text-[#f7d0b6] font-black text-5xl leading-snug mb-10">Finpoint is here to help you</h2>
           <p class="text-sky-950 text-sm mr-10">
             Purus in massa tempor nec. Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Faucibus ornare suspendisse sed nisi lacus sed viverra. Diam in arcu cursus euismod quis viverra nibh cras pulvinar.
           </p>
