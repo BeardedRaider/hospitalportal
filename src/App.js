@@ -14,6 +14,7 @@ import Register from "./components/pages/shared/Register"; // Importing the Regi
 import Test from "./components/pages/shared/Test"; // Importing the Test component
 import Appointments from './components/pages/shared/Appointments';
 import Footer from './components/footer/Footer';
+import ScrollToTop from './components/ScrollToTop';
 
 // Defining the App component
 
@@ -46,6 +47,7 @@ function App() {
     <div className="App">
       <DesktopWarning />
       <Router>
+      <ScrollToTop /> {/* This component ensures that the page is scrolled to the top when the URL path changes*/}
       <Navbar className={scrolled ? 'scrolled' : ''} />
         <Routes>
           {/* components are rendered when the URL path is exactly */}
