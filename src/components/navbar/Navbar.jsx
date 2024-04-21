@@ -39,7 +39,7 @@ const Navbar = ({ className, isDesktop}) => {   // Navbar component
   return (
     <div className={`navbar ${className}`}>
       <div>
-        <img  className="logo" src={process.env.PUBLIC_URL + '/images/health.png'} alt='LOGO' />
+        <img  className="logo" src={process.env.PUBLIC_URL + '/images/logoWITHheart.png'} alt='Rainbow Medical' />
         </div>
         <div>
         <ul>
