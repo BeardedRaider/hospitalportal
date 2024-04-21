@@ -54,19 +54,42 @@ function Parent(){
       <div className="py-20 rightBox relative ">
         <div className="relative z-20 pl-12">
           <h2 className="text-[#f7d0b6] font-black text-4xl leading-snug mb-10">Rainbow Medical is here <br/>to help you.</h2>
-          <p className="text-white text-sm">
+          <p className="text-white text-sm mr-10">
             Purus in massa tempor nec. Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Faucibus ornare suspendisse sed nisi lacus sed viverra. Diam in arcu cursus euismod quis viverra nibh cras pulvinar.
           </p>
           <button className="mt-8 text-white uppercase py-3 text-sm px-10 border border-white hover:bg-white hover:bg-opacity-10">Talk with expert</button>
+          
         </div>
       </div>
     </div>
   </div>
-  </section>
 
-  <section>
+    {/* How to get to us */}
 
-  </section>
+  {/* background of second part of section */}
+  <div class="py-4 relative overflow-hidden bg-white">
+    <div class="grid grid-cols-2 max-w-screen-lg mx-auto">
+    
+
+      <div class="py-20 leftBox relative ">
+        <div class="relative z-20 pl-12">
+          <h2 class="text-sky-950 font-black text-5xl leading-snug mb-10">Finpoint is here to help you</h2>
+          <p class="text-sky-950 text-sm">
+            Purus in massa tempor nec. Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Faucibus ornare suspendisse sed nisi lacus sed viverra. Diam in arcu cursus euismod quis viverra nibh cras pulvinar.
+          </p>
+          <button class="mt-8 text-sky-950 uppercase py-3 text-sm px-10 border border-sky-950 hover:bg-white hover:bg-opacity-10">Talk with expert</button>
+        </div>
+      </div>
+      <div class="w-full flex flex-col pl-16">
+        <h2 class="text-[#64618C] font-bold text-2xl max-w-xs text-left mb-12 mt-10">Whether you need Assistance</h2>
+        <div class="h-full mt-auto overflow-hidden relative">
+          <img src="https://picsum.photos/800/600" class="h-full w-full object-contain" alt=""/>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 </div>
   );

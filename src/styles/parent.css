@@ -28,9 +28,15 @@
 
 .subIntro {
     background-color: rgb(145, 226, 209);
+    
 
 }
 
-.rightBox {
+.rightBox{
     background-color: rgb(90, 141, 130);
 }
+
+.leftBox{
+    background-color: rgb(90, 141, 130);
+}
+

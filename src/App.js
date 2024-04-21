@@ -13,6 +13,7 @@ import Games from "./components/pages/patient/Games"; // Importing the Games com
 import Register from "./components/pages/shared/Register"; // Importing the Register component
 import Test from "./components/pages/shared/Test"; // Importing the Test component
 import Appointments from './components/pages/shared/Appointments';
+import Footer from './components/footer/Footer';
 
 // Defining the App component
 
@@ -43,7 +44,7 @@ function App() {
 
   return (
     <div className="App">
-            <DesktopWarning />
+      <DesktopWarning />
       <Router>
       <Navbar className={scrolled ? 'scrolled' : ''} />
         <Routes>
@@ -58,6 +59,7 @@ function App() {
           <Route path="/test" element={<Test />} />
           <Route path="/appointments" element={<Appointments />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );
