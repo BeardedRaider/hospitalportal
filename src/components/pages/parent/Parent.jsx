@@ -37,8 +37,8 @@ function Parent(){
     </section>
 
 {/* --------TALK WITH US --------*/}
-    <section>
-    <div className="py-12 relative overflow-hidden bg-gray-100">
+    <section className='bg-gray-200'>
+    <div className="py-12 relative overflow-hidden ">
     <div className="grid grid-cols-2 max-w-screen-lg mx-auto">
           <div className="w-full flex flex-col items-end pr-16">
             <h2 className="text-[#64618C] font-bold text-2xl max-w-xs text-right mb-12 mt-10">Whether you need Assistance on how medical procedures work</h2>
@@ -91,7 +91,7 @@ function Parent(){
   </div>
 
     {/* Our facilities */}
-  <div class="py-12 relative overflow-hidden bg-gray-100">
+  <div class="py-12 relative overflow-hidden ">
     <div class="grid grid-cols-2 max-w-screen-lg mx-auto">
       <div class="w-full flex flex-col items-end pr-16">
         <h2 class="text-[#64618C] font-bold text-2xl max-w-xs text-right mb-12 mt-10">Whether you need Assistance
