@@ -1,13 +1,28 @@
 .sectionApp{
-    background-image: url("../../public/images/appointment.jpg")!important;
-    background-color: rgba(126, 204, 165, 0.9)!important;
+    position: relative;
+    background-image: url("../../public/images/appointment.jpg");
+    background-image: url("../../public/images/nurseGroup.jpg");
+    background-size: cover; /* cover the entire section */
+    background-position: center; /* center the image */
+    background-repeat: no-repeat; /* do not repeat the image */
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    height: 40vh;
+    overflow: hidden;
+}
 
-    height: 41vh;
-    overflow: auto;
+.sectionApp::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent*/
+    z-index: 1;
 }
 
 .info {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.9);
-    background-color: rgba(126, 204, 165, 0.9);
+    background-color: rgb(145, 226, 209);
 
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import UserInformation from '../../UserInformation';
 import { format } from 'date-fns'; //need this for the date to be formatted correctly after npm install date-fns
-import "../../../styles/home.css";
+import "../../../styles/appointments.css";
 
 <link rel="stylesheet" href="https://
 horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/css/main.ad49aa9b.css" />
@@ -13,7 +13,7 @@ function Appointments() {
     const user = UserInformation()
   return (
   <div>
-    <section className="sectionBg2">
+    <section className="sectionApp">
     <div class="text-white py-8">
                 <div class="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-20">
                     <div class="flex flex-col w-full lg:w-1/2 justify-center items-start p-4">
