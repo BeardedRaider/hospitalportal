@@ -1,0 +1,13 @@
+.sectionApp{
+    background-image: url("../../public/images/appointment.jpg")!important;
+    background-color: rgba(126, 204, 165, 0.9)!important;
+
+    height: 41vh;
+    overflow: auto;
+}
+
+.info {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.9);
+    background-color: rgba(126, 204, 165, 0.9);
+
+}
