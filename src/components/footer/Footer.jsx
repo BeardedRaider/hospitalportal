@@ -3,14 +3,14 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="bg-white footerStyle">
-      <div className="container mx-auto px-6 py-20">
+      <div className="container mx-auto px-6 py-5">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
           <div className="sm:col-span-2">
-            <h1 className="max-w-lg text-3xl font-semibold tracking-tight text-gray-800 dark:text-white xl:text-4xl">
+            <h1 className="max-w-lg text-2xl font-semibold tracking-tight text-gray-800 dark:text-white xl:text-4xl">
               Subscribe our newsletter to recieve updates.
             </h1>
 
-            <div className="mx-auto mt-8 flex flex-col space-y-3 md:flex-row md:space-y-0">
+            <div className="mx-auto mt-4 flex flex-col space-y-3 md:flex-row md:space-y-0">
               <input
                 id="email"
                 type="text"
@@ -26,19 +26,17 @@ const Footer = () => {
 
           <div>
             <p className="font-semibold text-gray-800 dark:text-white">
-              Quick Link
+              Quick Links
             </p>
 
             <div className="mt-5 flex flex-col items-start space-y-2">
-              <button className="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline dark:text-gray-300 dark:hover:text-blue-400">
+              <button className="text-sky-950">
                 Home
               </button>
-              <button className="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline dark:text-gray-300 dark:hover:text-blue-400">
+              <button className="text-sky-950">
                 Who We Are
               </button>
-              <button className="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline dark:text-gray-300 dark:hover:text-blue-400">
-                Our Philosophy
-              </button>
+              
             </div>
           </div>
 
@@ -48,33 +46,31 @@ const Footer = () => {
             </p>
 
             <div className="mt-5 flex flex-col items-start space-y-2">
-              <button className="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline dark:text-gray-300 dark:hover:text-blue-400">
-                Retail & E-Commerce
-              </button>
-              <button className="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline dark:text-gray-300 dark:hover:text-blue-400">
+              <button className="text-gray-600 text-sky-950">
                 Information Technology
-              </button>
-              <button className="text-gray-600 transition-colors duration-300 hover:text-blue-500 hover:underline dark:text-gray-300 dark:hover:text-blue-400">
-                Finance & Insurance
-              </button>
+                </button>
+                <button className="text-sky-950 ">
+                Our Philosophy
+                </button>
             </div>
           </div>
         </div>
 
         <hr className="my-6 border-gray-200 dark:border-gray-700 md:my-8" />
-
+        {/* ---- logos ---- */}
         <div className="flex items-center justify-between">
           <button className="text-2xl font-bold text-gray-800 transition-colors duration-300 hover:text-gray-700 dark:text-white dark:hover:text-gray-300">
-            Brand
+            Rainbow Medical
           </button>
 
           <div className="-mx-2 flex">
             <button
-              className="mx-2 text-gray-600 transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400"
+              className="mx-2 text-gray-600"
               aria-label="Reddit"
             >
+                
               <svg
-                className="h-5 w-5 fill-current"
+                className="h-8 w-8 fill-current"
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -84,11 +80,11 @@ const Footer = () => {
             </button>
 
             <button
-              className="mx-2 text-gray-600 transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400"
+              className="mx-2 text-gray-600"
               aria-label="Facebook"
             >
               <svg
-                className="h-5 w-5 fill-current"
+                className="h-8 w-8 fill-current"
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -98,11 +94,11 @@ const Footer = () => {
             </button>
 
             <button
-              className="mx-2 text-gray-600 transition-colors duration-300 hover:text-blue-500 dark:text-gray-300 dark:hover:text-blue-400"
+              className="mx-2 text-gray-600"
               aria-label="Github"
             >
               <svg
-                className="h-5 w-5 fill-current"
+                className="h-8 w-8 fill-current"
                 viewBox="0 0 24 24"
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
@@ -111,6 +107,7 @@ const Footer = () => {
               </svg>
             </button>
           </div>
+
         </div>
       </div>
     </div>

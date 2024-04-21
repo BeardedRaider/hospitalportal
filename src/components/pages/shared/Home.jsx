@@ -142,7 +142,7 @@ function Home() {
 
       {/* ---------------------------------------questions--------------------------------------------------------- */}
 
-      <section class="bg-white sectionBg3">
+      <section class="bg-gray-100 sectionBg3">
         <div class="container mx-auto px-6 py-20">
           <h1 class="text-2xl font-semibold  dark:text-black lg:text-4xl">
             Frequently asked questions.
