@@ -28,8 +28,8 @@ mongoose.connection.on('connected', () => {
 app.post('/api/register', async (req, res) => {
     console.log(req.body);
     try {
-      const { patient_number, password, firstname, surname, email, guardian, guardian_name, dob, department, notes
-//comented out as its not working 
+       const { patient_number, password, //firstname, surname, email, guardian, guardian_name, dob, department, notes
+// //comented out as its not working 
 
 
 
