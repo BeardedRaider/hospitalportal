@@ -3,7 +3,7 @@ import gameData from "../../../json/games.json";
 
 const Games = () => {
   return (
-    <div>
+    <div className="flex flex-row">
     {gameData.map((game, index) => (
     <GameCard
     key={index}
