@@ -52,6 +52,12 @@ const GameCard = ({ image, name, description }) => {
         </div>
       </div>
     </section>
+    <section>
+      <div className="flex-none px-4 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5 mt-20 mb-8">
+          <div className="!z-5 relative flex flex-row rounded-[20px] max-w-[300px] bg-white bg-clip-border shadow-3xl shadow-shadow-500 flex flex-row w-full !p-4 3xl:p-![8px] bg-white undefined">
+          </div>
+        </div>
+    </section>
     </>
   );
 }
