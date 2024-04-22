@@ -54,14 +54,14 @@ const Navbar = ({ className, isDesktop}) => {   // Navbar component
                   <li><Link to="/parent">Dashboard</Link></li>
                   <li><Link to="/appointments">Childs Appointment</Link></li>
                   <li><Link to="https://www.nhsinform.scot/" target='_blank'>NHS Inform</Link></li>
-                  <li><button onClick={handleLogout}>Logout</button></li>
+                  <li><button className='logoutBtn'logoutBtn onClick={handleLogout}>Logout</button></li>
                 </>
                 ) : ( //if not parent
                 <>
                   <li><Link to="/patient">Home</Link></li>
                   <li><Link to="/appointment">Appointments</Link></li>
                   <li><Link to="/games">Entertainment</Link></li>
-                  <li><button onClick={handleLogout}>Logout</button></li>
+                  <li><button className='logoutBtn'logoutBtn onClick={handleLogout}>Logout</button></li>
                 </>
                 )}
                 
