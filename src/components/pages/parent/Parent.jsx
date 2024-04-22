@@ -123,28 +123,28 @@ function Parent(){
     <section>
     
     <div className="py-12 relative overflow-hidden rightBox">
-            <div className="max-w-screen-lg mx-auto">
-              <div className="w-full flex flex-col items-center">
-                <h2 className="text-[#f7d0b6] font-bold text-2xl mb-12 mt-10">Come And Find Us!</h2>
-                <div className="border rounded-lg overflow-hidden mb-8">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4482.16827465663!2d-4.2618023!3d55.8264989!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488846f0764625f9%3A0xd772f35465473b17!2sNew%20Victoria%20Hospital!5e0!3m2!1sen!2suk!4v1713788438143!5m2!1sen!2suk"
-                    width="600"
-                    height="450"
-                    style={{ border: '0' }}
-                    allowFullScreen=""
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                    title="Hospital Location">
-                  </iframe>
-                </div>
-                <a href="https://www.google.com/maps" target="_blank" rel="noreferrer">
-                  <button className="text-white uppercase py-2 text-sm px-4 border border-white bg-gray-900">Navigate</button>
-                </a>
+      <div className="max-w-screen-lg mx-auto">
+        <div className="w-full flex flex-col items-center">
+            <h2 className="text-[#f7d0b6] font-bold text-2xl mb-12 mt-10">Come And Find Us!</h2>
+              <div className="relative z-20 pl-12border rounded-lg overflow-hidden mb-8">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4482.16827465663!2d-4.2618023!3d55.8264989!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488846f0764625f9%3A0xd772f35465473b17!2sNew%20Victoria%20Hospital!5e0!3m2!1sen!2suk!4v1713788438143!5m2!1sen!2suk"
+                  width="600"
+                  height="450"
+                  style={{ border: '0' }}
+                  allowFullScreen=""
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Hospital Location">
+                </iframe>
               </div>
-            </div>
-          </div>
-    </section>
+                <a href="https://www.google.com/maps" target="_blank" rel="noreferrer">
+                <button className="text-white uppercase py-2 text-sm px-4 border border-white bg-gray-900">Navigate</button>
+                </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
 </div>
   );
