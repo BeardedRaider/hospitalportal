@@ -12,6 +12,7 @@ npm i axios
 
 all do this on desktop.
 
+-----------------------------------------------------------------------
 To get images loading from Unsplash API this needs to be installed first
 
 npm install axios
@@ -25,7 +26,12 @@ To get access to the Unsplash API, you need to register as a developer. Here's h
 -Fill in the application form. Provide all the necessary details.
 -Once you have created your application, you will be able to access your access key.
 
+------------------------------------------------------------------------
+To get the card slider working 
 
+npm install react-slick slick-carousel
+
+modify the Games.js file to utilize react-slick.
 
 ------------------------------------------------------------------------
 Theres a slight issue with loading the appointments data at times, it seems to be when coming back to the page after a while????
