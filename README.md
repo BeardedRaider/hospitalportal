@@ -12,7 +12,24 @@ npm i axios
 
 all do this on desktop.
 
+To get images loading from Unsplash API this needs to be installed first
+
+npm install axios
+
+To get access to the Unsplash API, you need to register as a developer. Here's how to do it:
+
+-Go to the Unsplash Developer page.
+-Click on the "Join as a Developer" button.
+-Sign up for an Unsplash account or sign in if you already have one.
+-Once logged in, you will be prompted to create a new application. Click on "New Application".
+-Fill in the application form. Provide all the necessary details.
+-Once you have created your application, you will be able to access your access key.
+
+
+
 ------------------------------------------------------------------------
+Theres a slight issue with loading the appointments data at times, it seems to be when coming back to the page after a while????
+
 Some Issues fixed
 
 Folder needs to be on the C drive, i think this is due to node.js being installed on the C drive? (it was due to this, once the folder was on C: it worked)
