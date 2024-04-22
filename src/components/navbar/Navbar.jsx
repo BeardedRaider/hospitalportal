@@ -69,9 +69,9 @@ const Navbar = ({ className, isDesktop}) => {   // Navbar component
             ) : ( //if not logged in
             <>
               <li><Link to="/">Home</Link></li>
-              <li><Link to="/login">Login</Link></li>
               <li><Link to="/register">Register</Link></li>
               <li><Link to="https://www.nhsinform.scot/" target='_blank'>NHS Inform</Link></li>   
+              <li><Link className='logoutBtn' to="/login">Login</Link></li>
             </>
             )}
         </ul>
