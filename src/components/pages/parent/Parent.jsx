@@ -1,13 +1,34 @@
-import React from 'react'
-import UserInformation from '../../UserInformation'
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import UserInformation from '../../UserInformation';
 import { Link } from 'react-router-dom';
 import "../../../styles/parent.css";
 
 
 function Parent(){
-    const user = UserInformation()
+  const [medicalImageAppointments, setMedicalImageAppointments] = useState('');
+  const [medicalImageFacilities, setMedicalImageFacilities] = useState('');
 
+  useEffect(() => {
+  const fetchMedicalImages = async () => {
+    try {
+      const responseAppointments = await axios.get(
+        'https://api.unsplash.com/photos/random?query=medical&count=1&client_id=4yZXMYsNhidIpE4bw39OI_q5cM4sr7yLvZ9BNw1CUT8'
+      );
+      setMedicalImageAppointments(responseAppointments.data[0].urls.regular);
 
+      const responseFacilities = await axios.get(
+        'https://api.unsplash.com/photos/random?query=medical&count=1&client_id=4yZXMYsNhidIpE4bw39OI_q5cM4sr7yLvZ9BNw1CUT8'
+      );
+      setMedicalImageFacilities(responseFacilities.data[0].urls.regular);
+    } catch (error) {
+      console.error('Error fetching images:', error);
+    }
+  };
+  fetchMedicalImages();
+}, []);
+
+    const user = UserInformation();
 
   return (  
   <div>
@@ -87,22 +108,22 @@ function Parent(){
           <div class="w-full flex flex-col pl-16">
             <h2 class="text-[#64618C] font-bold text-2xl max-w-xs text-left mb-12 mt-10">Getting Help where <br/> you need it.</h2>
             <div class="h-full mt-auto overflow-hidden relative">
-              <img src="https://picsum.photos/800/600" class="h-full w-full object-contain" alt=""/>
+            {medicalImageAppointments && <img src={medicalImageAppointments} className="h-full w-full object-contain" alt="" />}            
             </div>
           </div>
 
         </div>
       </div>
 
-        {/* Our facilities */}
+  {/*-------- Our facilities -------- */}
       <div class="py-12 relative overflow-hidden ">
         <div class="grid grid-cols-2 max-w-screen-lg mx-auto">
           <div class="w-full flex flex-col items-end pr-16">
             <h2 class="text-[#64618C] font-bold text-2xl max-w-xs text-right mb-12 mt-10">What's On The <br/> Grounds?
             </h2>
             <div class="h-full mt-auto overflow-hidden relative">
-              <img src="https://picsum.photos/800/600" class="h-full w-full object-contain" alt=""/>
-          </div>
+            {medicalImageFacilities && <img src={medicalImageFacilities} className="h-full w-full object-contain" alt="" />}            
+            </div>
         </div>
           <div class="py-20 rightBox relative">
             <div class="relative z-20 pl-12">

@@ -13,7 +13,7 @@ function Home() {
                         </h1>
                     <h2 class="text-3xl md:text-4xl leading-relaxed md:leading-snug mb-2">To Rainbow Medical Childrens Hospital
                     </h2>
-                    <p class="text-sm md:text-base text-gray-50 mb-4">
+                    <p class="text-2xl text-gray-50 mb-4">
                     At our children’s hospital, we believe in healing with love and
                     expertise.
                     </p>
@@ -28,13 +28,13 @@ function Home() {
 
       {/* --------------------------------------MEET THE TEAM------------------------------------------------ */}
 
-      <section class="bg-white sectionBg2">
+      <section class="bg-white sectionBg2  mb-10">
         <div class="container mx-auto px-6 pt-28">
           <h1 class="text-3xl font-semibold capitalize text-gray-800 dark:text-white lg:text-4xl">
             Our Executive Team
           </h1>
 
-          <p class="my-6 max-w-2xl text-gray-500 dark:text-gray-300">
+          <p class="my-4 max-w-2xl text-1xl text-gray-800">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo
             incidunt ex placeat modi magni quia error alias, adipisci rem
             similique, at omnis eligendi optio eos harum.
@@ -52,7 +52,7 @@ function Home() {
                 arthur melo
               </h1>
 
-              <p class="mt-2 capitalize text-gray-500 group-hover:text-gray-300 dark:text-gray-300">
+              <p class="mt-2 capitalize text-gray-800">
                 design director
               </p>
             </div>
@@ -68,7 +68,7 @@ function Home() {
                 Amelia. Anderson
               </h1>
 
-              <p class="mt-2 capitalize text-gray-500 group-hover:text-gray-300 dark:text-gray-300">
+              <p class="mt-2 capitalize text-gray-800">
                 Lead Developer
               </p>
             </div>
@@ -84,7 +84,7 @@ function Home() {
                 Olivia Wathan
               </h1>
 
-              <p class="mt-2 capitalize text-gray-500 group-hover:text-gray-300 dark:text-gray-300">
+              <p class="mt-2 capitalize text-gray-800">
                 Lead designer
               </p>
             </div>
@@ -100,7 +100,7 @@ function Home() {
                 John Doe
               </h1>
 
-              <p class="mt-2 capitalize text-gray-500 group-hover:text-gray-300 dark:text-gray-300">
+              <p class="mt-2 capitalize text-gray-800">
                 Full stack developer
               </p>
             </div>
@@ -116,7 +116,7 @@ function Home() {
                 Mia
               </h1>
 
-              <p class="mt-2 capitalize text-gray-500 group-hover:text-gray-300 dark:text-gray-300">
+              <p class="mt-2 capitalize text-gray-800">
                 Graphic Designer
               </p>
             </div>
@@ -132,7 +132,7 @@ function Home() {
                 Junior REIS
               </h1>
 
-              <p class="mt-2 capitalize text-gray-500 group-hover:text-gray-300 dark:text-gray-300">
+              <p class="mt-2 capitalize text-gray-800">
                 Products Managers
               </p>
             </div>

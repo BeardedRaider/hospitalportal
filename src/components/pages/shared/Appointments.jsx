@@ -14,15 +14,15 @@ function Appointments() {
   return (
   <div>
     <section className="sectionApp">
-    <div class="text-white py-8">
-                <div class="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-20">
-                    <div class="flex flex-col w-full lg:w-1/2 justify-center items-start p-4">
-                        <h1 class="text-3xl md:text-5xl p-1 text-yellow-300 tracking-loose">Welcome!
+    <div className="text-white py-8">
+                <div className="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-20">
+                    <div className="flex flex-col w-full lg:w-1/2 justify-center items-start p-4">
+                        <h1 className="text-3xl md:text-5xl p-1 text-yellow-300 tracking-loose">Welcome!
                         </h1>
-                    <h2 class="text-3xl md:text-4xl leading-relaxed md:leading-snug mb-2">
+                    <h2 className="text-3xl md:text-4xl leading-relaxed md:leading-snug mb-2">
                     {user ? user.guardian_name : 'Loading...'}
                     </h2>
-                    <p class="text-sm md:text-base text-gray-50 mb-4">
+                    <p className="text-sm md:text-base text-gray-50 mb-4">
                     From here you can view your child's upcoming appointments, the account details, and notes on your childs visits.
                     </p>
                     </div>
@@ -118,26 +118,26 @@ function Appointments() {
 </section>
 
     {/* ---------Appointment card section--------- */}
-  <section class="flex justify-center items-center h-screen sectionBg2">
-    <div class="!z-5 relative flex flex-col rounded-[20px] max-w-[300px] bg-gray-200 bg-clip-border shadow-3xl shadow-shadow-500 flex flex-col w-full !p-4 3xl:p-![18px] undefined">
+  <section className="flex justify-center items-center h-screen sectionBg2">
+    <div className="!z-5 relative flex flex-col rounded-[20px] max-w-[300px] bg-gray-200 bg-clip-border shadow-3xl shadow-shadow-500 flex flex-col w-full !p-4 3xl:p-![18px] undefined">
 
-      <div class="h-full w-full">
-        <div class="relative w-full">
+      <div className="h-full w-full">
+        <div className="relative w-full">
           {user && (
             <>
-          <div class="mb-3 flex items-center justify-between px-1 md:items-start">
-            <div class="mb-2">
-              <p class="text-lg font-bold text-navy-700">{format(new Date(user.appointment_date), 'MMMM dd, yyyy hh:mm a')}</p>
+          <div className="mb-3 flex items-center justify-between px-1 md:items-start">
+            <div className="mb-2">
+              <p className="text-lg font-bold text-navy-700">{format(new Date(user.appointment_date), 'MMMM dd, yyyy hh:mm a')}</p>
 
               <img src={process.env.PUBLIC_URL + '/images/x-rayHand.jpg'}/*process.env.PUBLIC_URL is a special variable that points to the public folder in your project.*/
                     
-                    class="mb-3 h-full w-full rounded-xl 3xl:h-full 3xl:w-full" alt="X-Ray of Hand"/>
-              <p class="mt-1 text-sm font-medium text-gray-600 md:mt-2">{user.appointment_notes}</p>
+                    className="mb-3 h-full w-full rounded-xl 3xl:h-full 3xl:w-full" alt="X-Ray of Hand"/>
+              <p className="mt-1 text-sm font-medium text-gray-600 md:mt-2">{user.appointment_notes}</p>
             </div>
           </div>
-          <div class="flex items-center justify-between md:items-center lg:justify-between ">
-            <div class="flex">
-              <p class="!mb-0 text-sm font-bold text-brand-500">Appointment Rating 6/10</p>
+          <div className="flex items-center justify-between md:items-center lg:justify-between ">
+            <div className="flex">
+              <p className="!mb-0 text-sm font-bold text-brand-500">Appointment Rating 6/10</p>
             </div>
           </div>
         </>
