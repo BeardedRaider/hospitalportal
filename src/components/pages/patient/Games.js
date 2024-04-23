@@ -4,6 +4,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import GameCard from "../../GameCard";
 import gameData from "../../../json/games.json";
+import UserInformation from '../../UserInformation'
+import "../../../styles/games.css";
 
 const Games = () => {
   const settings = {
@@ -32,8 +34,21 @@ const Games = () => {
       },
     ],
   };
-
+    const user = UserInformation()
   return (
+  <>
+  <section>
+    
+  </section>
+    <section  class=" sectionWelcome py-24 px-4 lg:px-16"> 
+            <div class="container mx-auto px-[12px] md:px-24 xl:px-12 max-w-[1300px] nanum2">
+                <h1 class=" text-white text-center text-5xl pb-12">Welcome
+                </h1>
+                <h2 className="text-white text-3xl md:text-4xl leading-relaxed md:leading-snug mb-2">
+                    {user ? user.firstname : 'Loading...'}!
+                </h2>
+            </div>
+        </section>
     <Slider {...settings}>
       {gameData.map((game, index) => (
         <div key={index} className="px-2">
@@ -42,11 +57,13 @@ const Games = () => {
               image={game.image}
               name={game.name}
               description={game.description}
+              link={game.link}
             />
           </div>
         </div>
       ))}
     </Slider>
+  </>
   );
 };
 
