@@ -19,7 +19,7 @@ function Patient(){
             </div>
         </section>
 
-        {/* ---------ABOUT US---------- */}
+        {/* ---------Sub weclome--------- */}
 
     <section className='subIntro '>
       <div className=" py-20 ml-10">
@@ -32,7 +32,7 @@ function Patient(){
       </div>
     </section>
 
-    {/* --------TALK WITH US --------*/}
+    {/* --------Take a look around --------*/}
 
     <section className='bg-gray-200 '>
       {/* Into + vid */}
@@ -54,7 +54,7 @@ function Patient(){
                     <p className="text-white text-sm mr-10">
                         Purus in massa tempor nec. Magna etiam tempor orci eu lobortis elementum nibh tellus molestie. Faucibus ornare suspendisse sed nisi lacus sed viverra.
                     </p>
-                    <button className="mt-8 text-white uppercase py-3 text-sm px-10 border border-white">Talk with expert</button>
+                    <button className="mt-8 text-white uppercase py-3 text-sm px-8 border border-white">Take a look around</button>
                 </div>
             </div>
         </div>
