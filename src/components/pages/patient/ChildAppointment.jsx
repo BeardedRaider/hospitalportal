@@ -60,7 +60,7 @@ const ChildAppointment = () => {
                   'format' is a function from the 'date-fns' library that formats dates */}
                     <p className="text-lg font-bold text-navy-700">{format(new Date(user.appointment_date), 'MMMM dd, yyyy hh:mm a')}</p>
                     {/* Display an image with the source path taken from the public folder and appended with '/images/MRI.jpg' - 'process.env.PUBLIC_URL' is an environment variable holding the public URL of the app */}
-                    <img src={process.env.PUBLIC_URL + '/images/MRI.jpg'} className="mb-3 h-full w-full rounded-xl 3xl:h-full 3xl:w-full" alt="X-Ray of Hand"/>
+                    <img src={process.env.PUBLIC_URL + '/images/MRI.jpg'} className="mb-3 h-full w-full rounded-xl 3xl:h-full 3xl:w-full" alt="MRI Equipment"/>
                     {/* // Display the user's appointment notes */}
                     <p className="mt-1 text-sm font-medium text-gray-600 md:mt-2">{user.appointment_notes}</p>
                   </div>
@@ -91,6 +91,24 @@ const ChildAppointment = () => {
     </div>
   </div>
     </section>
+            {/* Ward Map */}
+    <section>
+    <div className="py-12 relative overflow-hidden rightBox">
+      <div className="max-w-screen-lg mx-auto">
+        <div className="w-full flex flex-col items-center">
+            <h2 className="text-[#f7d0b6] font-bold text-2xl mb-12 mt-10">Where you'll be visiting on the day!</h2>
+              <div className="relative z-20 pl-12border rounded-xl overflow-hidden mb-8 mr-10 ml-10">
+              <img src={process.env.PUBLIC_URL + '/images/wardMap.png'} alt="Ward Map"/>
+              </div>
+              <p class="text-white text-lg mr-10 ml-10">
+                  Purus in massa tempor nec. Magna etiam tempor orci eu lobortis elementum nibh tellus molestie.
+              </p>
+        </div>
+      </div>
+    </div>
+    </section>
+
+
 
       {/* -----------Patient information ----------*/}
       {/* This section of the code is responsible for displaying the user's account information. It includes fields for the patient's name, email address, guardian's name, relationship to the patient, patient notes, and appointment notes. Each field is displayed in a separate input box, with the user's current information pre-filled. The information is fetched from the 'user' object, which is populated with the user's data.
