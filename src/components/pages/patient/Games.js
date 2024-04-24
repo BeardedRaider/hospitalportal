@@ -36,19 +36,30 @@ const Games = () => {
   };
     const user = UserInformation()
   return (
-  <>
-  <section>
-    
-  </section>
+    <>
     <section  class=" sectionWelcome py-24 px-4 lg:px-16"> 
-            <div class="container mx-auto px-[12px] md:px-24 xl:px-12 max-w-[1300px] nanum2">
-                <h1 class=" text-white text-center text-5xl pb-12">Welcome
-                </h1>
-                <h2 className="text-white text-3xl md:text-4xl leading-relaxed md:leading-snug mb-2">
-                    {user ? user.firstname : 'Loading...'}!
-                </h2>
-            </div>
-        </section>
+      <div class="container mx-auto px-[12px] md:px-24 xl:px-12 max-w-[1300px] nanum2">
+        <h1 class=" text-white text-center text-5xl pb-12">
+          Welcome
+        </h1>
+        <h2 className="text-white text-3xl md:text-4xl leading-relaxed md:leading-snug mb-2">{user ? user.firstname : 'Loading...'}!
+        </h2>
+      </div>
+    </section>
+
+    {/* ---------Sub weclome--------- */}
+    <section className='subIntro '>
+      <div className=" py-20 ml-10">
+        <div className="max-w-screen-lg mx-auto flex justify-between items-center">
+          <div className="max-w-xl">
+            <h2 className="font-black text-sky-950 text-3xl mb-4">Ready for some fun?.</h2>
+            <p className='text-sky-950 text-xl '>Here you can explore the games on offer! Just tap game you like and off you go!</p>
+          </div>  
+        </div>
+      </div>
+    </section>
+      
+      {/* ---------Game card slider--------- */}
     <Slider {...settings}>
       {gameData.map((game, index) => (
         <div key={index} className="px-2">
