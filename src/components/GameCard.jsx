@@ -2,6 +2,15 @@ import React from "react";
 
 <link rel="stylesheet" href="https://horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/css/main.ad49aa9b.css" />
 
+/*
+This is the 'GameCard' component. It's a functional component that takes in props for an image, name, description, and link. 
+
+The component returns a card with the game's image, name, and description. The image is displayed at the top of the card, with the name and description below it. At the bottom of the card, there's a "Play Now" button that links to the game's URL.
+
+The card has various styling classes applied to it, such as padding, margin, and shadow for the card itself, and font size and color for the text. The image is displayed with a full height and width, and object-cover to maintain its aspect ratio while filling the element box.
+
+The 'link' prop is used in an anchor tag to create a link that opens in a new tab (due to the 'target="_blank"' attribute) and mitigates the security risk of 'target="_blank"' with 'rel="noopener noreferrer"'.
+*/
 const GameCard = ({ image, name, description, link }) => {
   return (
     <>

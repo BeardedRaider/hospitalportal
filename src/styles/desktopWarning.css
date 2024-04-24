@@ -1,3 +1,5 @@
+/* .desktop-warning is the main class for the warning message. By default, it's not displayed (display: none). It's positioned fixed, meaning it will stay in the same place even if the page is scrolled. It covers the entire viewport (width: 100%, height: 100%) and has a dark background color (#333) and white text color. The text is centered (text-align: center) and it's stacked on top of everything else (z-index: 9999).
+ */
 .desktop-warning {
     display: none;
     position: fixed;
@@ -11,6 +13,8 @@
     z-index: 9999;
 }
 
+/* .desktop-warning .content positions the content of the warning message. It's positioned absolutely at the center of the .desktop-warning element (top: 50%, left: 50%) and then translated back by half of its own width and height (transform: translate(-50%, -50%)) to ensure it's centered.
+ */
 .desktop-warning .content {
     position: absolute;
     top: 50%;
@@ -18,7 +22,8 @@
     transform: translate(-50%, -50%);
 }
 
-
+/* .desktop-warning h1 and .desktop-warning p set the font sizes for the heading and paragraph of the warning message.
+ */
 .desktop-warning h1 {
     font-size: 2rem;
 }
@@ -27,6 +32,8 @@
     font-size: 1rem;
 }
 
+/* @media (min-width: 811px) is a media query that applies styles to devices with a viewport width of 811px or more. In this case, it sets the .desktop-warning to be displayed (display: block) on larger screens.
+ */
 @media (min-width: 811px) {
     .desktop-warning {
         display: block;

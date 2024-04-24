@@ -13,6 +13,8 @@ function Appointments() {
     const user = UserInformation()
   return (
   <div>
+    {/* This section of the code is responsible for displaying a welcome message to the user. It fetches the user's guardian name and displays it along with a brief description of what the user can do from this page.
+ */}
     <section className="sectionApp">
     <div className="text-white py-8">
                 <div className="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-20">
@@ -31,7 +33,8 @@ function Appointments() {
     </section>
 
     {/* -----------Patient information ----------*/}
-    
+    {/* This section of the code is responsible for displaying the user's account information. It includes fields for the patient's name, email address, guardian's name, relationship to the patient, patient notes, and appointment notes. Each field is displayed in a separate input box, with the user's current information pre-filled. The information is fetched from the 'user' object, which is populated with the user's data.
+ */}
     <section className=" py-1 bg-blueGray-50">
       <div className="w-full lg:w-8/12 px-4 mx-auto mt-6">
         {user &&(
@@ -115,11 +118,12 @@ function Appointments() {
   </div>
   )}
   </div>
-</section>
+    </section>
 
     {/* ---------Appointment card section--------- */}
     
-        
+    {/* This section of the code is responsible for displaying the user's appointments. Each appointment is displayed on a separate card, which includes the appointment date, an image, and appointment notes. The information is fetched from the 'user' object, which is populated with the user's data.
+ */}
     <section className="flex justify-center items-center h-auto sectionBg2">
   <div className="flex flex-col items-center">
     <h1 className="text-3xl md:text-5xl p-1 text-yellow-300 tracking-loose text-center mt-10 mb-10">You Childs Appointments </h1>
@@ -143,8 +147,8 @@ function Appointments() {
       </div>
     </div>
   </div>
-</section>
-    </div>
+    </section>
+  </div>
   )
 }
 

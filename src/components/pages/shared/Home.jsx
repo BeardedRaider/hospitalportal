@@ -5,6 +5,8 @@ import "../../../styles/home.css";
 function Home() {
     return (
     <div>
+      {/* This section of the code is responsible for displaying a welcome message to the user. It includes a heading, a subheading, a brief description, and a login button. The section has a background image and text styling applied.
+ */}
         <section className="sectionBg">
             <div class="text-white py-8 mt-20">
                 <div class="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-20">
@@ -27,7 +29,8 @@ function Home() {
         </section>
 
       {/* --------------------------------------MEET THE TEAM------------------------------------------------ */}
-
+        {/* This section of the code is responsible for displaying the executive team of the hospital. It includes a heading, a brief description, and a grid of team members. Each team member is displayed with a profile picture, name, and role. The section has a white background.
+        */}
       <section class="bg-white sectionBg2  mb-10">
         <div class="container mx-auto px-6 pt-28">
           <h1 class="text-3xl font-semibold capitalize text-gray-800 dark:text-white lg:text-4xl">
@@ -141,7 +144,8 @@ function Home() {
       </section>
 
       {/* ---------------------------------------questions--------------------------------------------------------- */}
-
+{/* This section of the code is responsible for displaying frequently asked questions. It includes a heading and a grid of questions. Each question is displayed with an icon, question text, and answer text. The section has a gray background.
+ */}
       <section class="bg-gray-100 sectionBg3">
         <div class="container mx-auto px-6 py-20">
           <h1 class="text-2xl font-semibold  dark:text-black lg:text-4xl">

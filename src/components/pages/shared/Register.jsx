@@ -4,7 +4,10 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import "../../../styles/register.css";
 
+// Define the Register component
 const Register = () => {
+    // Define state variables for each field in the registration form
+
   const [patient_number, setPatientNumber] = useState('');
   const [password, setPassword] = useState('');
   const [firstname, setFirstname] = useState('');
@@ -16,11 +19,12 @@ const Register = () => {
   const [department, setDepartment] = useState('');
   const [notes, setNotes] = useState('');
 
-  //posts the data to the server
+  // Define the function to handle form submission
   const handleRegister = async (event) => {
-  // Prevent the form from refreshing the page (not working)
+    // Prevent the form from refreshing the page
     event.preventDefault();
   try {
+          // Send a POST request to the server with the form data
       await axios.post('http://localhost:5000/api/register', {
         patient_number,
         password,
@@ -46,9 +50,10 @@ const Register = () => {
       setNotes('');
 
 
-
+      // Log a success message
       console.log('Registration successful');
     } catch (error) {
+      // Log an error message
       console.error('Registration failed:', error.response.data.error);
     }
   };

@@ -35,11 +35,11 @@ function App() {
       }
     };
 
-    document.addEventListener('scroll', handleScroll, { passive: true });
+    document.addEventListener('scroll', handleScroll, { passive: true });//adding event listener
 
     return () => {
       // cleanup
-      document.removeEventListener('scroll', handleScroll);
+      document.removeEventListener('scroll', handleScroll);//removing event listener
     };
   }, [scrolled]);
 

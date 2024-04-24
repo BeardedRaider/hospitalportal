@@ -1,20 +1,16 @@
 /* code that goes in this file will affect the entire app */
 .App {
-    width: 100%;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgba(126, 204, 165, 0.9);
-
-
+    width: 100%;/* set the width of the app */
+    height: auto;/* set the height of the app */
+    display: flex;/* display the items in a row */
+    flex-direction: column;/* set the direction of the items */
+    font-family: Arial, Helvetica, sans-serif;/* set the font family */
+    background-color: rgba(126, 204, 165, 0.9);/* set the background color */
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-    
+body {/*style for the body*/
+    margin: 0;/*remove the margin*/
+    padding: 0;/*remove the padding*/
+    box-sizing: border-box;/*set the box-sizing property*/
 }
 

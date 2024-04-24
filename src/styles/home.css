@@ -5,9 +5,9 @@
     background-size: cover; /* cover the entire section */
     background-position: center; /* center the image */
     background-repeat: no-repeat; /* do not repeat the image */
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-    height: 60vh;
-    overflow: auto;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);/* add a shadow to the section */
+    height: 60vh;/* set the height of the section */
+    overflow: auto;/* add a scrollbar if the content is too long */
 }
 
 .sectionBg::before {
@@ -22,22 +22,22 @@
 }
 
 .sectionBg2 {
-    background-color: rgba(126, 204, 165, 0.9);
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); 
+    background-color: rgba(126, 204, 165, 0.9);/* semi-transparent green */
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); /* add a shadow to the section */
 }
 
 .sectionBg3 {
-    /* background-color: rgb(203, 206, 205); */
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    /* background-color: rgb(203, 206, 205); *//* light grey */
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5); /* add a shadow to the section */
     
 }
 
 .text-white {
-    position: relative;
-    z-index: 100;
+    position: relative;/* position the text */
+    z-index: 100;/* make sure the text is on top of the overlay */
 }
 
 .footerStyle {
-    background-color: rgb(32, 217, 159);
+    background-color: rgb(32, 217, 159);/* green */
 
 }

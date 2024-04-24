@@ -1,52 +1,52 @@
 .navbar {/*style for the navbar*/
-    width: 100%; 
-    height: 100px;
-    background-color: rgb(145, 226, 209);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    z-index: 200;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1); 
+    width: 100%; /*width of the navbar*/
+    height: 100px;/*height of the navbar*/
+    background-color: rgb(145, 226, 209);/*green*/
+    display: flex;/*display the items in a row*/
+    align-items: center;/*center the items vertically*/
+    justify-content: space-between;/*space between the logo and the list*/
+    position: sticky;/*stick the navbar to the top*/
+    top: 0;/*stick the navbar to the top*/
+    z-index: 200;/*z-index of the navbar*/
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);/*add a shadow to the navbar*/ 
   }  
 
 .logo {/*style for the logo*/
-  margin-left: 2.5rem;
-  height: 8rem;
+  margin-left: 2.5rem;/*margin from the left*/
+  height: 8rem;/*height of the logo*/
 }
 
 .navbar ul {/*style for the list*/
-    display: flex;
-    margin-right: auto;
+    display: flex;/*display the items in a row*/
+    margin-right: auto;/*margin from the right*/
 }
 
 .navbar ul li {/* style for the list items*/
-    list-style: none;
-    margin-right: 40px;
+    list-style: none;/*remove the bullet points*/
+    margin-right: 40px;/*margin from the right*/
 }
 
 .navbar.scrolled {/*style for the navbar when scrolled*/
-  background: rgb(126, 204, 165, 0.9);
-  transition: 0.4s;
+  background: rgb(126, 204, 165, 0.9);/*semi-transparent green*/
+  transition: 0.4s;/*transition effect*/
 }
 
 .logoutBtn {
-  background-color: #ff6b6b ;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  border: none;
-  cursor: pointer;
-  font-size: 12px;
-  transition: background-color 0.3s ease;
+  background-color: #097548 ;/*green*/
+  color: #fff;/*white*/
+  padding: 10px 20px;/*padding of the button*/
+  border-radius: 5px;/*border radius of the button*/
+  border: none;/*remove the border*/
+  cursor: pointer;/*cursor style*/
+  font-size: 14px;/*font size of the button*/
+  transition: background-color 0.3s ease;/*transition effect*/
 }
 
-.logoutBtn:hover
+.logoutBtn:hover/*style for the button when hovered*/
  {
-  background-color: #e63946;
+  background-color: #55e993;/*light green*/
  }
 
- .logoutBtn:active {
-  transform: translateY(1px);
+ .logoutBtn:active {/*style for the button when active*/
+  transform: translateY(1px);/*move the button down*/
  }
