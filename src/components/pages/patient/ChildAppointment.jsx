@@ -4,16 +4,22 @@ import { format } from 'date-fns'; //need this for the date to be formatted corr
 <link rel="stylesheet" href="https://
 horizon-tailwind-react-git-tailwind-components-horizon-ui.vercel.app/static/css/main.ad49aa9b.css" />
 
+// Define the ChildAppointment component
 const ChildAppointment = () => {
+  // Fetch user information using the UserInformation function
   const user = UserInformation()
+    // Return the JSX to be rendered by this component
+
   return (
   <div>
     <section className="sectionApp">
+      {/* adding padding top and bottom, giving white tect */}
     <div className="text-white py-8">
                 <div className="container mx-auto flex flex-col md:flex-row items-center my-12 md:my-20">
                     <div className="flex flex-col w-full lg:w-1/2 justify-center items-start p-4">
                         <h1 className="text-3xl md:text-5xl p-1 text-yellow-300 tracking-loose">Welcome!
                         </h1>
+                        {/* // A heading displaying the user's first name, or "Loading..." if the user data is not yet available */}
                     <h2 className="text-3xl md:text-4xl leading-relaxed md:leading-snug mb-2">
                     {user ? user.firstname : 'Loading...'}
                     </h2>
@@ -49,9 +55,13 @@ const ChildAppointment = () => {
                   <div className="mb-2">
                     
                   <p className="text-lg font-bold text-navy-700" >MRI SCAN</p>{/* had to hard code this in as i couldnt get it to call the data from the db */}
+                  {/* // Display the user's appointment date The date is formatted as "Month dd, yyyy hh:mm a"
+                  'new Date(user.appointment_date)' converts the appointment_date string to a Date object
+                  'format' is a function from the 'date-fns' library that formats dates */}
                     <p className="text-lg font-bold text-navy-700">{format(new Date(user.appointment_date), 'MMMM dd, yyyy hh:mm a')}</p>
-                    
+                    {/* Display an image with the source path taken from the public folder and appended with '/images/MRI.jpg' - 'process.env.PUBLIC_URL' is an environment variable holding the public URL of the app */}
                     <img src={process.env.PUBLIC_URL + '/images/MRI.jpg'} className="mb-3 h-full w-full rounded-xl 3xl:h-full 3xl:w-full" alt="X-Ray of Hand"/>
+                    {/* // Display the user's appointment notes */}
                     <p className="mt-1 text-sm font-medium text-gray-600 md:mt-2">{user.appointment_notes}</p>
                   </div>
                 </div>
@@ -70,6 +80,7 @@ const ChildAppointment = () => {
     <h1 className="text-3xl md:text-5xl p-1 text-sky-950 tracking-loose text-center mt-10 mb-10">Procedure Information</h1>
     <div className="relative w-full h-0 border border-gray-400 rounded-lg" style={{ paddingBottom: "56.25%" }}>
       <iframe
+      // Display a YouTube video with the source path taken from the YouTube embed URL
         className="absolute top-0 left-0 w-full h-full rounded-lg"
         src="https://www.youtube.com/embed/X-L92Z1P82g"
         title="Understanding MRI - Jumo Health"
@@ -82,7 +93,8 @@ const ChildAppointment = () => {
     </section>
 
       {/* -----------Patient information ----------*/}
-      
+      {/* This section of the code is responsible for displaying the user's account information. It includes fields for the patient's name, email address, guardian's name, relationship to the patient, patient notes, and appointment notes. Each field is displayed in a separate input box, with the user's current information pre-filled. The information is fetched from the 'user' object, which is populated with the user's data.
+*/}
     <section className=" py-1 ">
         <div className="w-full lg:w-8/12 px-4 mx-auto mt-6">
           {user &&(

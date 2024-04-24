@@ -1,17 +1,25 @@
 import React from "react";
 import "../../styles/footer.css";
 
+// Define the Footer component
 const Footer = () => {
   return (
+    // Footer container
     <div className="footerStyle">
+      {/* // Inner container with padding and centered content */}
       <div className="container mx-auto px-6 py-5">
+        {/* // Grid layout for footer content */}
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-y-10 lg:grid-cols-4">
+          {/* // Newsletter subscription section */}
           <div className="sm:col-span-2">
+            {/* // Newsletter heading */}
             <h1 className="max-w-lg text-2xl font-semibold tracking-tight text-gray-800 dark:text-white xl:text-4xl">
               Subscribe our newsletter to recieve updates.
             </h1>
 
+            {/* // Newsletter subscription form */}
             <div className="mx-auto mt-4 flex flex-col space-y-3 md:flex-row md:space-y-0">
+              {/* // Email input field */}
               <input
                 id="email"
                 type="text"
@@ -19,17 +27,21 @@ const Footer = () => {
                 placeholder="Email Address"
               />
 
+              {/* // Subscribe button */}
               <button className="w-full transform rounded-lg bg-gray-800 px-6 py-2.5 text-sm font-medium tracking-wider text-white transition-colors duration-300 hover:bg-gray-700 focus:outline-none focus:ring focus:ring-gray-300 focus:ring-opacity-80 md:mx-4 md:w-auto">
                 Subscribe
               </button>
             </div>
           </div>
 
+          {/* // Quick links section */}
           <div>
+            {/* // Section heading */}
             <p className="font-semibold text-gray-800 dark:text-white">
               Quick Links
             </p>
 
+            {/* // List of links */}
             <div className="mt-5 flex flex-col items-start space-y-2">
               <button className="text-sky-950">
                 Home
@@ -37,34 +49,41 @@ const Footer = () => {
               <button className="text-sky-950">
                 Who We Are
               </button>
-              
             </div>
           </div>
 
+          {/* // Industries section */}
           <div>
+            {/* // Section heading */}
             <p className="font-semibold text-gray-800 dark:text-white">
               Industries
             </p>
 
+            {/* // List of industries */}
             <div className="mt-5 flex flex-col items-start space-y-2">
               <button className="text-gray-600 text-sky-950">
                 Information Technology
-                </button>
-                <button className="text-sky-950 ">
+              </button>
+              <button className="text-sky-950 ">
                 Our Philosophy
-                </button>
+              </button>
             </div>
           </div>
         </div>
 
+        {/* // Horizontal rule */}
         <hr className="my-6 border-gray-200 dark:border-gray-700 md:my-8" />
-        {/* ---- logos ---- */}
+
+        {/* // Logos section */}
         <div className="flex items-center justify-between">
+          {/* // Company name */}
           <button className="text-2xl font-bold text-gray-800 transition-colors duration-300 hover:text-gray-700 dark:text-white dark:hover:text-gray-300">
             Rainbow Medical
           </button>
 
+          {/* // Social media icons */}
           <div className="-mx-2 flex">
+            {/* Reddit icon */}
             <button
               className="mx-2 text-gray-600"
               aria-label="Reddit"
