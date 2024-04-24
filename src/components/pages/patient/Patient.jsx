@@ -72,7 +72,7 @@ function Patient(){
                 Here, you can find everthing you need to know about your child's upcoming appointments. You can also find out how to prepare for the appointments and what to expect.
               </p>
               <button class="mt-8 text-white uppercase py-3 text-sm px-10 border" >
-              <Link to="/Appointment">Go To Appointments</Link>
+              <Link to="/ChildAppointment">Go To Appointments</Link>
                 </button>
             </div>
           </div>

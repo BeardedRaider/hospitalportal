@@ -59,7 +59,7 @@ const Navbar = ({ className, isDesktop}) => {   // Navbar component
                 ) : ( //if not parent
                 <>
                   <li><Link to="/patient">Home</Link></li>
-                  <li><Link to="/appointment">Appointments</Link></li>
+                  <li><Link to="/childappointment">Your Appointment</Link></li>
                   <li><Link to="/games">Entertainment</Link></li>
                   <li><button className='logoutBtn'logoutBtn onClick={handleLogout}>Logout</button></li>
                 </>
