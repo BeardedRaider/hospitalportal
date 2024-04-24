@@ -1,3 +1,4 @@
+// importing various components from react, components and other packages
 import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -8,6 +9,7 @@ import UserInformation from '../../UserInformation'
 import "../../../styles/games.css";
 
 const Games = () => {
+  // This object is used to configure the behavior of the slider. It specifies the number of slides to show at a time, the number of slides to scroll, and the breakpoints at which the number of slides to show changes. The 'responsive' property is an array of objects that specify the number of slides to show at different screen sizes. The 'dots' property is set to 'false' to hide the navigation dots at the bottom of the slider. The 'infinite' property is set to 'true' to allow infinite scrolling of the slides. The 'speed' property specifies the speed of the slide transition in milliseconds. The 'swipeToSlide' property is set to 'true' to allow swiping to navigate between slides. The 'initialSlide' property is set to 2 to start the slider at the third slide. The 'slidesToShow' property is set to 4 to show 4 slides at a time on larger screens. The 'slidesToScroll' property is set to 1 to scroll one slide at a time. The 'breakpoint' property is used to specify the screen width at which the settings should change. The 'settings' object is passed as a prop to the 'Slider' component to configure its behavior.
   const settings = {
     dots: false,
     infinite: true,
@@ -34,6 +36,7 @@ const Games = () => {
       },
     ],
   };
+  // This function is responsible for rendering the welcome section of the page. It displays a welcome message and the user's first name. The 'UserInformation' component is used to get the user's information from the context.
     const user = UserInformation()
   return (
     <>
@@ -60,6 +63,9 @@ const Games = () => {
     </section>
       
       {/* ---------Game card slider--------- */}
+      
+{/* This section of the code is responsible for rendering a slider with game cards. The 'Slider' component takes a settings object to configure its behavior. For each game in the 'gameData' array, a 'GameCard' component is rendered inside the slider. Each 'GameCard' displays the game's image, name, description, and a link to the game. The 'key' prop given to each 'div' in the map function is the index of the game in the 'gameData' array. */}
+
     <Slider {...settings}>
       {gameData.map((game, index) => (
         <div key={index} className="px-2">
