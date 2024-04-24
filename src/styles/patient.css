@@ -1,0 +1,11 @@
+.patientSection {
+    position: relative;
+    
+    background-image: url("../../public/images/ward.jpg");
+    background-size: cover; /* cover the entire section */
+    background-position: center; /* center the image */
+    background-repeat: no-repeat; /* do not repeat the image */
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    height: 40vh;
+    /* overflow: hidden; */
+}

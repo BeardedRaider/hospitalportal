@@ -1,6 +1,6 @@
 .sectionParent {
     position: relative;
-    /* background-color: rgb(145, 226, 209); */
+    
     background-image: url("../../public/images/nurseGroup.jpg");
     background-size: cover; /* cover the entire section */
     background-position: center; /* center the image */
